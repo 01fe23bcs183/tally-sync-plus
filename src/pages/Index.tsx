@@ -76,6 +76,7 @@ const Index = () => {
     { key: 'manufacturing', label: 'Manufacturing', icon: <Factory className="h-4 w-4" /> },
     { key: 'purchaseorders', label: 'Purchase Orders', icon: <ShoppingCart className="h-4 w-4" /> },
     { key: 'salesorders', label: 'Sales Orders', icon: <ShoppingBag className="h-4 w-4" /> },
+    { key: 'stockaging', label: 'Stock Aging', icon: <Clock className="h-4 w-4" /> },
   ];
 
   return (
