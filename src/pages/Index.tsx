@@ -16,9 +16,10 @@ import InterestDashboard from '@/components/easy/InterestDashboard';
 import BillWiseDashboard from '@/components/easy/BillWiseDashboard';
 import DebitCreditNotes from '@/components/easy/DebitCreditNotes';
 import MemoVoucherDashboard from '@/components/easy/MemoVoucherDashboard';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote } from 'lucide-react';
+import GSTReturnDashboard from '@/components/easy/GSTReturnDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
@@ -49,6 +50,7 @@ const Index = () => {
     { key: 'billwise', label: 'Bills', icon: <Receipt className="h-4 w-4" /> },
     { key: 'notes', label: 'Dr/Cr Notes', icon: <FileMinus className="h-4 w-4" /> },
     { key: 'memo', label: 'Memo', icon: <StickyNote className="h-4 w-4" /> },
+    { key: 'gst', label: 'GST Returns', icon: <IndianRupee className="h-4 w-4" /> },
   ];
 
   return (
@@ -95,6 +97,7 @@ const Index = () => {
             {activeTab === 'billwise' && <BillWiseDashboard />}
             {activeTab === 'notes' && <DebitCreditNotes />}
             {activeTab === 'memo' && <MemoVoucherDashboard />}
+            {activeTab === 'gst' && <GSTReturnDashboard />}
           </>
         )}
       </div>
