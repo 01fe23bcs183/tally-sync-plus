@@ -39,6 +39,30 @@ Visual bill management with drag-drop payment matching, aging charts, and automa
 └──────────────────────────────────────────────┘
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Bill-wise Details: Raj Traders                   │
+│──────────────────────────────────────────────────│
+│ Ref No      Date        Amount     Pending       │
+│──────────────────────────────────────────────────│
+│ INV-201     01-Feb-26   1,00,000     45,000      │
+│ INV-218     15-Mar-26   1,50,000   1,50,000      │
+│ INV-225     01-Apr-26   1,75,000   1,25,000      │
+│──────────────────────────────────────────────────│
+│ Total Outstanding:                 3,20,000      │
+│ Overdue (>30 days):                1,45,000      │
+│                                                  │
+│ F5:Adjust  F7:New Ref  Alt+P:Print  Esc:Back     │
+└──────────────────────────────────────────────────┘
+```
+- Tally-identical bill reference layout
+- F5 to adjust payment against bill, F7 to create new reference
+- Arrow keys to navigate bills, Enter for details
+- Same bill allocation flow as Tally Prime
+
+
 ## Implementation Steps
 1. Sync bill-wise details from Tally vouchers
 2. Build aging calculation and color-coded dashboard

@@ -66,6 +66,30 @@ Auto-fetch live forex rates, one-click currency revaluation, and clear gain/loss
 </TALLYMESSAGE></REQUESTDATA></IMPORTDATA></BODY></ENVELOPE>
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Sales Voucher (Forex)        No: SV-0043        │
+│ Date: 15-Apr-2026                                │
+│ Currency: USD  Rate: 83.42                       │
+│──────────────────────────────────────────────────│
+│ Dr  Global Imports LLC   $5,000.00  ₹4,17,100   │
+│ Cr  Export Sales         $5,000.00  ₹4,17,100   │
+│ Cr  Forex Gain A/c                    ₹2,340    │
+│──────────────────────────────────────────────────│
+│ Narration: Export sale to Global Imports          │
+│                                                  │
+│ F12:Currency  F2:Date  Alt+R:Rate  Ctrl+G:Gain   │
+└──────────────────────────────────────────────────┘
+```
+- F12 to toggle currency mode on/off
+- Alt+R to manually enter exchange rate
+- Dual-column display (foreign + INR) like Tally Prime
+- Ctrl+G to view gain/loss calculation breakdown
+- All Tally forex keyboard shortcuts preserved
+
+
 ## Implementation Steps
 1. Create currency master sync from Tally
 2. Integrate forex rate API with caching (refresh every 4 hours)

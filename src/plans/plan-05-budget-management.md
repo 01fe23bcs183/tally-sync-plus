@@ -46,6 +46,32 @@ Visual budget builder with period-wise breakdown, real-time tracking gauges, ove
 </REQUESTDESC></EXPORTDATA></BODY></ENVELOPE>
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Budget Variance Report         FY 2025-26       │
+│──────────────────────────────────────────────────│
+│ Particulars       Budget    Actual    Variance   │
+│──────────────────────────────────────────────────│
+│ Salary Expense   15,00,000 12,50,000  2,50,000  │
+│ Rent Expense      6,00,000  5,00,000  1,00,000  │
+│ Marketing         8,00,000  4,00,000  4,00,000  │
+│ Travel            3,00,000  2,00,000  1,00,000  │
+│ Misc Expenses     4,00,000  1,00,000  3,00,000  │
+│──────────────────────────────────────────────────│
+│ Total            36,00,000 24,50,000 11,50,000  │
+│                                                  │
+│ F1:Help  F5:Create  F7:Monthly  Alt+P:Print      │
+└──────────────────────────────────────────────────┘
+```
+- Tally-style columnar budget report
+- F5 to create/edit budget, F7 for monthly breakdown
+- Arrow keys to navigate, Enter to drill into a head
+- Alt+P to print, Ctrl+E to export
+- Budget groups follow Tally's ledger group hierarchy
+
+
 ## Implementation Steps
 1. Sync existing budgets from Tally
 2. Build budget creation wizard with period breakdown
