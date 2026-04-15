@@ -12,12 +12,12 @@ import {
 } from '@/components/ui/dialog';
 import {
   FileText, Plus, ArrowUpRight, ArrowDownRight, Link2,
-  CheckCircle2, Clock, Send
+  CheckCircle2, Send
 } from 'lucide-react';
 import {
   getNotes, getInvoices, getInvoiceByNumber, getAllReasons,
   calculateGST, formatNoteAmt, STATUS_CONFIG,
-  NoteType, NoteReason, NoteEntry, LinkedInvoice
+  NoteType, NoteReason, NoteEntry
 } from '@/services/debitCreditNoteService';
 import { toast } from 'sonner';
 
