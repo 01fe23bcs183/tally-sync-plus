@@ -59,6 +59,15 @@ Tally XML API
 └────────────────┘
 ```
 
+
+## UI — Easy Mode
+Live data indicator (pulsing dot), real-time voucher feed, change notification toasts
+
+
+## UI — Tally Mode
+Real-time updates appear automatically in Tally Mode — new vouchers/changes refresh instantly, status bar shows stream state
+
+
 ## Implementation Steps
 1. Build hash-based state tracker for each data type
 2. Implement field-level diff algorithm

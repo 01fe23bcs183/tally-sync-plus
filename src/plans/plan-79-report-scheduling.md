@@ -21,6 +21,15 @@ Build a report scheduling system where users define which reports to generate, w
 5. **Conditional Reports**: Only send if data meets conditions (e.g., outstanding > ₹1L)
 6. **Report History**: View all sent reports with delivery status
 
+
+## UI — Easy Mode
+Schedule builder with calendar, recipient picker, format selector, delivery history list
+
+
+## UI — Tally Mode
+Alt+S to schedule current report, schedule list with cron-style timing, F5 to edit schedule, delivery log register
+
+
 ## Implementation Steps
 1. Build schedule definition UI (report, frequency, recipients)
 2. Create cron-based scheduler engine

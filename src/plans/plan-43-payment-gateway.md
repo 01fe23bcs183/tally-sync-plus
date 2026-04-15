@@ -20,6 +20,15 @@ Embed payment collection into invoices — generate UPI/payment links, auto-reco
 4. **Auto-Receipt**: Generate receipt voucher in Tally on payment confirmation
 5. **Payment Dashboard**: Track pending, completed, failed payments
 
+
+## UI — Easy Mode
+Payment link generator with QR code, payment status dashboard, UPI/card selector
+
+
+## UI — Tally Mode
+Alt+P to generate payment link from invoice, payment status register, F5 to check payment status, reconciliation view
+
+
 ## Implementation Steps
 1. Integrate payment gateway API (Razorpay/Stripe)
 2. Build payment link generator from invoice data

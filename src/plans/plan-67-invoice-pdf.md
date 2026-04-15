@@ -22,6 +22,15 @@ Build a professional invoice PDF generation system with customizable templates. 
 6. **Batch Generation**: Generate invoices for multiple vouchers at once
 7. **Auto-Send**: Generate and email/WhatsApp invoice on voucher save
 
+
+## UI — Easy Mode
+Template gallery with previews, drag-drop template editor, branding panel, batch generate button
+
+
+## UI — Tally Mode
+Alt+P to print/generate PDF from any voucher, F8 to select template, template list with preview, batch print via Ctrl+B
+
+
 ## Implementation Steps
 1. Build PDF generation engine (React-PDF or Puppeteer)
 2. Create 5+ pre-built invoice templates

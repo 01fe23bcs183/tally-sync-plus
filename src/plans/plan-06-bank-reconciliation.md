@@ -51,6 +51,34 @@ Upload bank statements, auto-match with Tally entries, handle exceptions with a 
 </REQUESTDESC></EXPORTDATA></BODY></ENVELOPE>
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Bank Reconciliation Statement                    │
+│ Bank: Bank of India    Period: Apr 2026          │
+│──────────────────────────────────────────────────│
+│ Date     Particulars      Debit    Credit  BkDt  │
+│──────────────────────────────────────────────────│
+│ 01-Apr   Raj Traders              5,000   01-Apr │
+│ 03-Apr   Rent Payment    25,000           03-Apr │
+│ 04-Apr   Receipt-R002             8,500   05-Apr │
+│ 08-Apr   Salary          50,000           [    ] │
+│──────────────────────────────────────────────────│
+│ Balance as per Books:    8,75,000                │
+│ Balance as per Bank:     8,62,500                │
+│ Difference:                12,500                │
+│                                                  │
+│ F5:Reconcile  F2:Date  Alt+A:Auto  Esc:Back      │
+└──────────────────────────────────────────────────┘
+```
+- Tally-identical BRS layout with bank date column
+- Enter bank date to mark as reconciled
+- F5 to reconcile selected, Alt+A to auto-fill dates
+- Arrow keys to navigate, same flow as Tally Prime BRS
+- Shows balance difference at bottom
+
+
 ## Implementation Steps
 1. Build bank statement parser (CSV, Excel, PDF via OCR)
 2. Create auto-matching algorithm (amount ± tolerance, date ± 3 days, reference)

@@ -20,6 +20,15 @@ Auto-save drafts to localStorage/DB, resume incomplete entries, and manage draft
 4. **Draft Status**: Show "Draft saved 5s ago" indicator
 5. **Submit or Discard**: Clear workflow to finalize or delete drafts
 
+
+## UI — Easy Mode
+Auto-save indicator in status bar, draft list with resume buttons, version history timeline
+
+
+## UI — Tally Mode
+Auto-save every 30 seconds with status line indicator, Alt+D to view drafts list, F5 to resume draft, draft auto-loads on restart
+
+
 ## Implementation Steps
 1. Create draft serialization for all voucher types
 2. Implement auto-save timer with debouncing

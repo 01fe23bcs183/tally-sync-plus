@@ -43,6 +43,15 @@ Drag-and-drop report builder with data from all Tally modules, save templates, s
 └──────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Drag-drop report builder canvas, field palette sidebar, live preview panel, save/schedule buttons
+
+
+## UI — Tally Mode
+Report definition screen with field selection via arrow keys, F5 to generate, F8 to save template, Alt+P to print/export
+
+
 ## Implementation Steps
 1. Define available field catalog from all Tally data
 2. Build drag-drop report designer UI

@@ -20,6 +20,15 @@ Multi-company dashboard with consolidated reports, inter-company elimination, an
 4. **Group Dashboard**: KPIs across all companies in one view
 5. **Currency Consolidation**: Convert foreign subsidiary to parent currency
 
+
+## UI — Easy Mode
+Company cards with key metrics, consolidated dashboard with company selector, inter-company entries
+
+
+## UI — Tally Mode
+Alt+F3 to switch company (Tally standard), consolidated reports with company columns, F5 for company-wise breakdown
+
+
 ## Implementation Steps
 1. Build multi-company connection manager
 2. Fetch data from multiple Tally companies

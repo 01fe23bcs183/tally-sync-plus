@@ -46,6 +46,30 @@ Visual cost center management with drag-drop allocation, real-time dashboards, a
 </REQUESTDESC></EXPORTDATA></BODY></ENVELOPE>
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Cost Centre Allocation                           │
+│──────────────────────────────────────────────────│
+│ Particulars      Cost Centre      Amount         │
+│──────────────────────────────────────────────────│
+│ Salary Expense   Marketing       1,20,000.00    │
+│                  Engineering     1,05,000.00    │
+│                  Operations        75,000.00    │
+│──────────────────────────────────────────────────│
+│ Total                            3,00,000.00    │
+│                                                  │
+│ F5:Allocate  Alt+C:Centres  Esc:Back             │
+└──────────────────────────────────────────────────┘
+```
+- Tab-based allocation entry matching Tally's cost centre screen
+- F5 to confirm allocation, Alt+C to view all centres
+- Arrow keys to navigate between cost centres
+- Auto-calculate remaining balance on last entry
+- Tally-identical report format for cost centre statements
+
+
 ## Implementation Steps
 1. Sync cost center masters from Tally
 2. Build tree view component for cost center hierarchy

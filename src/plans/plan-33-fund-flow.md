@@ -20,6 +20,15 @@ Auto-generated fund flow statement with visual flow diagrams and period comparis
 4. **Period Comparison**: Side-by-side fund flow for multiple periods
 5. **Schedule of Changes**: Detailed breakdown of long-term changes
 
+
+## UI — Easy Mode
+Sankey diagram showing fund sources→uses, interactive flow chart, period comparison slider
+
+
+## UI — Tally Mode
+Fund flow statement in Tally's standard format, sources/applications of funds, F7 for period comparison, Alt+P to print
+
+
 ## Implementation Steps
 1. Fetch comparative balance sheet data from Tally
 2. Build fund flow computation engine

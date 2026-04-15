@@ -20,6 +20,15 @@ Smart reorder system with alerts, demand forecasting, lead time awareness, and a
 4. **Demand Forecasting**: Predict future consumption from historical data
 5. **Supplier Auto-Select**: Choose supplier based on best price/delivery history
 
+
+## UI — Easy Mode
+Dashboard cards for low-stock items with reorder buttons, stock level gauges, auto-PO generation wizard
+
+
+## UI — Tally Mode
+Reorder status register, minimum/reorder level display, F5 to create PO, alert list with quantities below minimum level
+
+
 ## Implementation Steps
 1. Sync reorder levels and current stock from Tally
 2. Build consumption rate calculator from movement data

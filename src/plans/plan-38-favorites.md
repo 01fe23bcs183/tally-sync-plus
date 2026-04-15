@@ -20,6 +20,15 @@ Favorites system with pinned items, customizable quick-access bar, and personali
 4. **Dashboard Widgets**: Add favorite reports as dashboard cards
 5. **Keyboard Quick-Launch**: Number keys (1-9) for top favorites
 
+
+## UI — Easy Mode
+Star icons on items, favorites sidebar panel, drag-to-reorder, quick access grid on dashboard
+
+
+## UI — Tally Mode
+Alt+B to bookmark current screen, F3 for favorites list, numbered shortcuts (1-9) for top favorites, Tally Gateway-style menu
+
+
 ## Implementation Steps
 1. Build favorites storage (localStorage/DB)
 2. Create star/pin UI for all listable items

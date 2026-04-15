@@ -20,6 +20,15 @@ Full PO lifecycle management with approval workflow, fulfillment tracking, and o
 4. **Partial Receipt**: Track partial deliveries against PO
 5. **Vendor Scorecard**: Track delivery performance per supplier
 
+
+## UI — Easy Mode
+PO pipeline kanban (Draft→Sent→Partial→Complete), visual PO form with item picker, fulfillment progress bars
+
+
+## UI — Tally Mode
+PO entry screen matching Tally's purchase order format, F5 to convert to invoice, pending PO register, Alt+O for order list
+
+
 ## Implementation Steps
 1. Sync purchase orders from Tally
 2. Build Kanban pipeline view

@@ -21,6 +21,15 @@ One-click invoice sharing via WhatsApp and SMS with templates, delivery tracking
 5. **Delivery Tracking**: Know if message was delivered and read
 6. **Auto-Reminders**: Schedule payment reminders based on due dates
 
+
+## UI — Easy Mode
+Share button on invoices with WhatsApp/SMS/Email options, contact picker, message preview
+
+
+## UI — Tally Mode
+Alt+W to share via WhatsApp from any invoice, F5 to select format (PDF/image), party mobile number auto-filled
+
+
 ## Implementation Steps
 1. Build invoice PDF generator
 2. Integrate WhatsApp Business API (or wa.me link for basic)

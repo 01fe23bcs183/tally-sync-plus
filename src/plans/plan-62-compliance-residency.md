@@ -20,6 +20,15 @@ Implement data residency controls (India-first hosting), configurable retention 
 5. **Compliance Dashboard**: Show compliance status, certifications, audit readiness
 6. **Data Classification**: Tag data by sensitivity level
 
+
+## UI — Easy Mode
+Region selector map, retention policy cards, compliance checklist with progress
+
+
+## UI — Tally Mode
+Compliance settings in admin menu, region shown in status bar, data export via Alt+E, deletion workflow with confirmations
+
+
 ## Implementation Steps
 1. Set up multi-region cloud infrastructure (India priority)
 2. Build data retention policy engine with auto-purge

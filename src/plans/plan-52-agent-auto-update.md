@@ -49,6 +49,15 @@ Build an auto-update system using electron-updater with a health monitoring laye
 └─────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Health dashboard with component status cards, update notification banner, diagnostic button
+
+
+## UI — Tally Mode
+Agent health check runs in background — Tally Mode shows agent status in bottom status bar, Alt+H for health details
+
+
 ## Implementation Steps
 1. Integrate electron-updater with GitHub Releases or custom update server
 2. Build health check module (Tally ping, cloud ping, system resources)

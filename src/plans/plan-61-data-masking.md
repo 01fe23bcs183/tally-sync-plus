@@ -20,6 +20,15 @@ Implement configurable data masking that hides or obfuscates sensitive fields ba
 5. **Masking Rules**: Conditional masking (mask amounts > ₹1L, mask specific parties)
 6. **Audit Unmask**: Log every unmask action
 
+
+## UI — Easy Mode
+Masked fields with blur effect, click-to-unmask with re-auth dialog, masking rule config panel
+
+
+## UI — Tally Mode
+Masked amounts show as ******, Alt+U to unmask with password, role-based masking applied automatically
+
+
 ## Implementation Steps
 1. Define masking rule schema (field, role, mask type, conditions)
 2. Build masking middleware for API responses

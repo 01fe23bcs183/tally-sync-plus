@@ -40,6 +40,15 @@ Visual BOM builder, one-click production entries, wastage tracking, and producti
 └────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Visual BOM tree with nested components, drag-drop assembly, cost breakdown pie chart, production order cards
+
+
+## UI — Tally Mode
+BOM entry screen matching Tally's manufacturing journal, F5 to select BOM, component list with quantities, wastage entry field
+
+
 ## Implementation Steps
 1. Sync BOM data from Tally stock items
 2. Build visual BOM tree component

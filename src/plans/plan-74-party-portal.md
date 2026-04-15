@@ -21,6 +21,15 @@ Build a self-service portal where customers and vendors can log in, view their l
 5. **Dispute System**: Raise disputes on specific entries with comments
 6. **Statement Download**: Download account statement for any period
 
+
+## UI — Easy Mode
+Self-service web portal with party login, ledger view, invoice download, payment button, dispute form
+
+
+## UI — Tally Mode
+Party portal is web-only (Easy Mode) — Tally Mode users manage portal settings via admin menu, view portal activity log
+
+
 ## Implementation Steps
 1. Build party authentication system (email/phone based)
 2. Create party dashboard with ledger view

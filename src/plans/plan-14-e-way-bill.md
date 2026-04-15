@@ -21,6 +21,40 @@ Integrated E-Way Bill generation from invoices with transport management and val
 5. **Part-B Update**: Update vehicle details without portal visit
 6. **Consolidation**: Create consolidated E-Way Bills for multiple invoices to same destination
 
+
+## UI — Easy Mode
+```
+┌──────────────────────────────────────────────────┐
+│ E-Way Bill Generator                             │
+├──────────────────────────────────────────────────┤
+│ Invoice: [INV-225 ▼]  Transport: [🚛 Road ▼]    │
+│ From: Mumbai, MH  →  To: Delhi, DL              │
+│ Vehicle: [MH02AB1234]  Distance: [450 km]        │
+│ Value: ₹1,75,000  Validity: 5 days              │
+│ [Generate E-Way Bill]  [Bulk Generate]           │
+└──────────────────────────────────────────────────┘
+```
+- Visual route display, auto-calculated validity
+- Bulk generation from multiple invoices
+
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ E-Way Bill                                       │
+│──────────────────────────────────────────────────│
+│ Invoice: INV-225   Party: Raj Traders            │
+│ From: Mumbai MH    To: Delhi DL                  │
+│ Transport: Road    Vehicle: MH02AB1234           │
+│ Distance: 450 km   Value: 1,75,000              │
+│ E-Way Bill No: 3210 0012 3456                    │
+│ F5:Generate  F8:Cancel  Alt+U:Update  Ctrl+B:Bulk│
+└──────────────────────────────────────────────────┘
+```
+- Text-based form, F5 to generate, F8 to cancel
+- Alt+U to update vehicle/transporter
+
+
 ## Implementation Steps
 1. Integrate with E-Way Bill API
 2. Build transport master management

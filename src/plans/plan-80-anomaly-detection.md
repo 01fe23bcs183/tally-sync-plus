@@ -47,6 +47,15 @@ Build an AI-powered anomaly detection system that continuously monitors transact
 └─────────────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Risk score dashboard with flagged transactions, drill-down cards, rule builder UI, fraud chart
+
+
+## UI — Tally Mode
+Anomaly register with risk scores, F5 for transaction details, F7 to filter by risk level, Alt+R for rule configuration
+
+
 ## Implementation Steps
 1. Build rule engine with configurable conditions
 2. Implement duplicate detection (fuzzy matching on amount, party, narration)

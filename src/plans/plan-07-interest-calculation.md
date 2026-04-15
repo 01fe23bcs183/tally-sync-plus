@@ -39,6 +39,30 @@ Auto-calculate interest on outstanding balances with configurable rates, generat
 └────────────────────────────────────────────┘
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Interest Calculation                             │
+│ Ledger: Raj Traders    Rate: 12% p.a.           │
+│──────────────────────────────────────────────────│
+│ Date       Balance      Days    Interest         │
+│──────────────────────────────────────────────────│
+│ 01-Apr-26  1,50,000.00   30     1,479.45        │
+│ 01-May-26  2,00,000.00   31     2,038.36        │
+│ 01-Jun-26  1,20,000.00   30     1,183.56        │
+│──────────────────────────────────────────────────│
+│ Total Interest:                  4,701.37        │
+│                                                  │
+│ F5:Calculate  F7:Create Vch  Alt+P:Print         │
+└──────────────────────────────────────────────────┘
+```
+- Tally-style tabular display with running balance
+- F5 to recalculate, F7 to create interest voucher
+- Alt+P to print statement, Ctrl+E to export
+- Supports simple/compound interest matching Tally
+
+
 ## Implementation Steps
 1. Build interest profile configuration UI
 2. Create calculation engine (simple, compound, daily/monthly)

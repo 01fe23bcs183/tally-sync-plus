@@ -46,6 +46,15 @@ Implement multi-method 2FA support including TOTP (Google Authenticator), SMS OT
 └───────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+2FA setup wizard with QR code, authenticator app link, recovery code cards, trusted device list
+
+
+## UI — Tally Mode
+2FA prompt at login — enter TOTP code after password, F5 to verify, recovery code entry option, standard text input
+
+
 ## Implementation Steps
 1. Integrate TOTP library (otpauth/speakeasy)
 2. Build QR code generation for authenticator app setup

@@ -21,6 +21,15 @@ Build a Progressive Web App (PWA) optimized for mobile. Focus on read-heavy use 
 6. **Offline Support**: View cached reports without internet
 7. **Approve/Reject**: Review and approve pending vouchers
 
+
+## UI — Easy Mode
+Mobile-optimized dashboard with swipe navigation, quick entry forms, push notification badges
+
+
+## UI — Tally Mode
+PWA is Easy Mode only — designed for mobile-first experience with touch-optimized controls and simplified navigation
+
+
 ## Implementation Steps
 1. Optimize responsive layout for mobile viewports
 2. Build mobile-specific dashboard with key KPIs

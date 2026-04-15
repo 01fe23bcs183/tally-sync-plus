@@ -21,6 +21,15 @@ Implement end-to-end encryption where data is encrypted at the agent before tran
 5. **Zero-Knowledge Option**: Server cannot decrypt data — only client-side decryption
 6. **Key Recovery**: Secure key recovery mechanism (split keys, recovery codes)
 
+
+## UI — Easy Mode
+Encryption status badge on data views, key management panel, zero-knowledge toggle
+
+
+## UI — Tally Mode
+Encryption transparent in Tally Mode — all data encrypted/decrypted automatically, lock icon in status bar
+
+
 ## Implementation Steps
 1. Enforce TLS 1.3 on all API endpoints
 2. Implement AES-256-GCM encryption/decryption in agent

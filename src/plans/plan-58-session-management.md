@@ -21,6 +21,15 @@ Build comprehensive session management with device tracking, configurable timeou
 5. **IP Restrictions**: Whitelist/blacklist IP ranges
 6. **Concurrent Limits**: Max N sessions per user
 
+
+## UI — Easy Mode
+Active sessions list with device icons, force logout buttons, trusted device toggles
+
+
+## UI — Tally Mode
+Session info in status bar, Alt+S to view active sessions list, F5 to logout session, device trust via text menu
+
+
 ## Implementation Steps
 1. Build session tracking with device fingerprinting
 2. Implement session storage with metadata (IP, UA, geo)

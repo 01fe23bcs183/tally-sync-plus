@@ -51,6 +51,15 @@ Build a complete cheque management system: PDC register, maturity calendar, cheq
 └─────────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Cheque calendar with maturity dates, bank-wise tabs, bounce tracking cards, print preview
+
+
+## UI — Tally Mode
+PDC register in Tally format, F5 to add cheque, maturity date list, F7 to mark deposited, bounce entry, Alt+P to print cheque
+
+
 ## Implementation Steps
 1. Build PDC register data model and UI
 2. Create maturity calendar with cheque visualization

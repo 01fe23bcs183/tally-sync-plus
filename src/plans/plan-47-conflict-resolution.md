@@ -35,6 +35,15 @@ Visual conflict resolution with side-by-side diff, merge tools, and resolution p
 └─────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Side-by-side diff view with color highlighting, accept/reject buttons per field, merge preview
+
+
+## UI — Tally Mode
+Conflict list with arrow navigation, F5 to accept local, F6 to accept remote, F7 for side-by-side text diff view
+
+
 ## Implementation Steps
 1. Implement change tracking with timestamps/hashes
 2. Build conflict detection algorithm

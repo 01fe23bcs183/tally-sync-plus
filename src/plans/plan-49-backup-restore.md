@@ -22,6 +22,15 @@ Automated backup scheduling with cloud storage, incremental backups, and one-cli
 5. **Backup Verification**: Auto-verify backup integrity
 6. **Retention Policy**: Keep last 7 daily, 4 weekly, 12 monthly
 
+
+## UI — Easy Mode
+Backup schedule cards, one-click backup button, restore wizard with calendar picker, backup history list
+
+
+## UI — Tally Mode
+Alt+B for backup menu, F5 to create backup now, restore list with dates, F7 to restore selected, backup log in Tally format
+
+
 ## Implementation Steps
 1. Build data export engine (serialize all cached data)
 2. Create backup scheduling system

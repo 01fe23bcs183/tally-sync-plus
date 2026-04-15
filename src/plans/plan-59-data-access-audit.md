@@ -20,6 +20,15 @@ Implement comprehensive data access logging — every report view, ledger access
 5. **Access Reports**: Generate compliance reports of who accessed what
 6. **Anomaly Alerts**: Flag unusual access patterns (bulk exports, off-hours access)
 
+
+## UI — Easy Mode
+Access log timeline, report view cards, export tracking badges
+
+
+## UI — Tally Mode
+Data access register matching Tally audit format, F5 for access details, F7 to filter, Alt+P to export for auditors
+
+
 ## Implementation Steps
 1. Build access logging middleware for all data endpoints
 2. Implement hash chain for tamper-proof logs

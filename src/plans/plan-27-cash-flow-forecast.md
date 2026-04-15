@@ -21,6 +21,15 @@ AI-powered cash flow forecasting with scenario analysis, receivable/payable proj
 5. **Trend Detection**: Identify seasonal patterns and anomalies
 6. **Early Warning**: Alert when projected cash drops below threshold
 
+
+## UI — Easy Mode
+Interactive cash flow chart with forecast line, scenario toggles, AI confidence bands, monthly projections
+
+
+## UI — Tally Mode
+Cash flow projection table with monthly columns, F5 to recalculate, historical vs projected comparison, Alt+P to print
+
+
 ## Implementation Steps
 1. Aggregate receivable/payable due dates from Tally
 2. Analyze historical payment patterns per customer

@@ -20,6 +20,15 @@ Simple role-based access control with pre-defined templates and granular permiss
 4. **Login System**: User authentication with session management
 5. **Permission Inheritance**: Group-based permissions with individual overrides
 
+
+## UI — Easy Mode
+Role management cards with permission toggles, user list with role badges, access matrix grid
+
+
+## UI — Tally Mode
+User role register, F5 to assign role, permission list with Y/N toggles, Alt+U for user list, role-based menu filtering
+
+
 ## Implementation Steps
 1. Design permission schema (module × action × data scope)
 2. Build role management UI

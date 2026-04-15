@@ -21,6 +21,15 @@ Customizable keyboard shortcut system with visual cheat sheet, profiles, and lea
 5. **Shortcut Search**: Type description to find shortcut
 6. **Usage Analytics**: Show most/least used shortcuts, suggest optimizations
 
+
+## UI — Easy Mode
+Visual shortcut editor with key capture, profile selector dropdown, searchable cheat sheet overlay, conflict detection
+
+
+## UI — Tally Mode
+Shortcut list in Tally-style menu, Alt+K to view all shortcuts, F5 to customize, profile switching with Alt+1/2/3
+
+
 ## Implementation Steps
 1. Create shortcut registry with default bindings
 2. Build shortcut manager UI

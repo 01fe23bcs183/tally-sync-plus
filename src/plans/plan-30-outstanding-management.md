@@ -40,6 +40,15 @@ Smart outstanding management with aging analysis, automated reminders, collectio
 └──────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Party cards with aging bars, follow-up action buttons (call/email/WhatsApp), payment collection pipeline
+
+
+## UI — Tally Mode
+Outstanding register matching Tally's format, age-wise grouping, F5 for party details, Alt+R for reminder, F7 for aging report
+
+
 ## Implementation Steps
 1. Fetch outstanding data from Tally (bill-wise)
 2. Build aging calculation engine

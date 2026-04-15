@@ -20,6 +20,15 @@ Multi-panel interface with split views, pop-out windows, and reference panels.
 4. **Layout Presets**: Save and restore panel arrangements
 5. **Drag-Drop Organization**: Rearrange panels by dragging
 
+
+## UI — Easy Mode
+Tab bar with drag-to-split, side-by-side panel layout, floating window support, window management toolbar
+
+
+## UI — Tally Mode
+Alt+W to open in new panel, Ctrl+Tab to switch panels, F12 for panel layout, split-screen voucher+report view
+
+
 ## Implementation Steps
 1. Implement panel management system (resizable, draggable)
 2. Build split-view layout component

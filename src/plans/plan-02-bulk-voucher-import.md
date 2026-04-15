@@ -73,6 +73,36 @@ A drag-and-drop file upload with smart column mapping, data validation, preview,
 </TALLYMESSAGE></REQUESTDATA></IMPORTDATA></BODY></ENVELOPE>
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Bulk Import                                      │
+│──────────────────────────────────────────────────│
+│ File: bank_statement_apr2026.csv                 │
+│ Rows: 247 | Valid: 244 | Errors: 3              │
+│──────────────────────────────────────────────────│
+│ Mapping:                                         │
+│  Date        → Voucher Date                      │
+│  Description → Narration                         │
+│  Debit       → Dr Amount                         │
+│  Credit      → Cr Amount                         │
+│──────────────────────────────────────────────────│
+│ Preview:                                         │
+│  01-04-2026  Raj Traders       Dr   5,000  [OK]  │
+│  02-04-2026  XYZ Corp          Cr  12,000  [OK]  │
+│  03-04-2026  ABC Ltd           Dr     800  [OK]  │
+│──────────────────────────────────────────────────│
+│ F5:Import  F8:Map  Esc:Cancel  Alt+T:Template    │
+└──────────────────────────────────────────────────┘
+```
+- Keyboard-driven column mapping (Tab to navigate, Enter to select)
+- Text-based table preview matching Tally's Day Book format
+- F5 to start import, Esc to cancel
+- Alt+T to save/load mapping templates
+- Status line shows row counts and errors
+
+
 ## Implementation Steps
 1. Build file upload component with drag-drop support
 2. Integrate Papa Parse (CSV) and SheetJS (Excel) for file parsing

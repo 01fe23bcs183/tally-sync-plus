@@ -21,6 +21,15 @@ Visual expense analytics with category breakdown, anomaly detection, vendor anal
 5. **Budget vs Actual**: Per-category budget tracking
 6. **Drill-Down**: Click category → see individual transactions
 
+
+## UI — Easy Mode
+Expense category treemap, monthly trend lines, budget vs actual bars, anomaly flags with tooltips
+
+
+## UI — Tally Mode
+Expense register with category grouping, monthly breakdown table, F7 for period, budget comparison columns, Tally format
+
+
 ## Implementation Steps
 1. Classify expense vouchers by category (ledger group based)
 2. Build category breakdown charts

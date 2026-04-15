@@ -22,6 +22,15 @@ Build an integrated payroll system that handles employee management, salary proc
 6. **Form 16**: Auto-generate Form 16 for employees
 7. **Attendance Integration**: Link attendance to salary calculation
 
+
+## UI — Easy Mode
+Employee cards with salary breakdown, payslip preview, PF/ESI status indicators, batch process button
+
+
+## UI — Tally Mode
+Payroll register in Tally format, F5 to process salary, employee list, payslip generation via Alt+P, PF/ESI report
+
+
 ## Implementation Steps
 1. Build employee master data model
 2. Create salary structure configurator

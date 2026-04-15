@@ -20,6 +20,15 @@ Multi-level undo/redo for all data entry operations within the app, with version
 4. **Batch Rollback**: Undo all changes from a bulk operation
 5. **Trash/Recycle Bin**: Deleted items recoverable for 30 days
 
+
+## UI — Easy Mode
+Undo/redo buttons in toolbar, action history panel with timestamps, click-to-restore any state
+
+
+## UI — Tally Mode
+Ctrl+Z undo, Ctrl+Y redo, Alt+H for action history list, F5 to restore specific state, confirmation prompt before undo
+
+
 ## Implementation Steps
 1. Implement command pattern for all data mutations
 2. Build undo/redo stack manager

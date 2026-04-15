@@ -43,6 +43,15 @@ Build a web-based admin dashboard for managing all deployed agents. Agents maint
 └──────────────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Agent fleet dashboard with status grid, remote config panel, bulk action buttons
+
+
+## UI — Tally Mode
+Agent management via web dashboard in Easy Mode — Tally Mode benefits from remotely configured sync settings
+
+
 ## Implementation Steps
 1. Build WebSocket command channel (cloud → agent)
 2. Implement command handlers in agent (restart, update-config, send-logs)

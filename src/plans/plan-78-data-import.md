@@ -22,6 +22,15 @@ Build a migration wizard that can import data from popular accounting software. 
 6. **Progress Tracking**: Show import progress with detailed logs
 7. **Incremental Import**: Import specific date ranges or data types
 
+
+## UI — Easy Mode
+Migration wizard with source selector, field mapping UI, progress bar, rollback button
+
+
+## UI — Tally Mode
+Data import via wizard in Easy Mode, F5 to start import, mapping screen with Tab navigation, import log in Tally format
+
+
 ## Implementation Steps
 1. Research export formats of Busy, Marg, QuickBooks, Zoho
 2. Build file parsers for each format

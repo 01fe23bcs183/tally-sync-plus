@@ -20,6 +20,15 @@ Interactive comparative statements with period/company selection, auto-computed 
 4. **Visual Bars**: Inline bar charts showing relative sizes
 5. **Drill-Down**: Click any number to see underlying vouchers
 
+
+## UI — Easy Mode
+Side-by-side column charts, multi-period selector tabs, variance highlighting with color coding
+
+
+## UI — Tally Mode
+Comparative P&L/BS in Tally's multi-column format, F7 for period selection, column navigation with arrow keys
+
+
 ## Implementation Steps
 1. Fetch financial data for multiple periods from Tally
 2. Build multi-column comparison table component

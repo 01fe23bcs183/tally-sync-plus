@@ -20,6 +20,42 @@ Memorandum voucher dashboard with one-click conversion, reminders, and bulk proc
 4. **Reminders**: Alert when memos are older than configurable days
 5. **Categorization**: Tag memos by purpose (provisional, estimate, pending approval)
 
+
+## UI — Easy Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Memorandum Vouchers                              │
+├──────────────────────────────────────────────────┤
+│ ┌───────┬────────────┬─────────┬───────┬──────┐ │
+│ │ Date  │ Party      │ Amount  │ Type  │ Act  │ │
+│ │ 10-Apr│ ABC Corp   │ 50,000  │ Sales │ [⟳]  │ │
+│ │ 12-Apr│ XYZ Ltd    │ 25,000  │ Purch │ [⟳]  │ │
+│ └───────┴────────────┴─────────┴───────┴──────┘ │
+│ Pending: 5 vouchers  Total: ₹2,45,000           │
+│ [New Memo]  [Convert Selected]  [Convert All]    │
+└──────────────────────────────────────────────────┘
+```
+- One-click convert to regular voucher
+- Bulk convert with confirmation dialog
+
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Memorandum Voucher             No: M-012         │
+│ Date: 10-Apr-2026                                │
+│──────────────────────────────────────────────────│
+│ Dr  ABC Corp                       50,000.00    │
+│ Cr  Sales Account                  50,000.00    │
+│──────────────────────────────────────────────────│
+│ Status: MEMORANDUM (non-accounting)              │
+│ F7:Convert  F5:Save  Alt+M:Memo List  Esc:Back   │
+└──────────────────────────────────────────────────┘
+```
+- F7 to convert memo to regular voucher
+- Alt+M to view all memorandum vouchers
+
+
 ## Implementation Steps
 1. Fetch memorandum vouchers from Tally
 2. Build dashboard with filters and aging
