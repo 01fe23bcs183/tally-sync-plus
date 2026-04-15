@@ -8,9 +8,10 @@ import EasyInventory from '@/components/easy/EasyInventory';
 import TallyMode from '@/components/tally/TallyMode';
 import ConnectionSetup from '@/components/ConnectionSetup';
 import { Button } from '@/components/ui/button';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X } from 'lucide-react';
+import MultiCurrencyDashboard from '@/components/easy/MultiCurrencyDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
@@ -33,6 +34,7 @@ const Index = () => {
     { key: 'ledgers', label: 'Ledgers', icon: <BookOpen className="h-4 w-4" /> },
     { key: 'vouchers', label: 'Vouchers', icon: <FileText className="h-4 w-4" /> },
     { key: 'inventory', label: 'Inventory', icon: <Package className="h-4 w-4" /> },
+    { key: 'currency', label: 'Currency', icon: <ArrowRightLeft className="h-4 w-4" /> },
   ];
 
   return (
@@ -71,6 +73,7 @@ const Index = () => {
             {activeTab === 'ledgers' && <EasyLedgers />}
             {activeTab === 'vouchers' && <EasyVouchers />}
             {activeTab === 'inventory' && <EasyInventory />}
+            {activeTab === 'currency' && <MultiCurrencyDashboard />}
           </>
         )}
       </div>
