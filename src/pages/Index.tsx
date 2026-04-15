@@ -80,6 +80,7 @@ const Index = () => {
     { key: 'salesorders', label: 'Sales Orders', icon: <ShoppingBag className="h-4 w-4" /> },
     { key: 'stockaging', label: 'Stock Aging', icon: <Clock className="h-4 w-4" /> },
     { key: 'reorder', label: 'Reorder Alerts', icon: <BellRing className="h-4 w-4" /> },
+    { key: 'reports', label: 'Reports', icon: <FileBarChart className="h-4 w-4" /> },
   ];
 
   return (
