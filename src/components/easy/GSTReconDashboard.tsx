@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import {
   getReconEntries, getReconSummary, formatReconAmount,
-  type MatchStatus, type ReconEntry
+  type MatchStatus
 } from '@/services/gstReconService';
 import { toast } from 'sonner';
 

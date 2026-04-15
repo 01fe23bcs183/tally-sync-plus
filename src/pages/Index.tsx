@@ -17,9 +17,10 @@ import BillWiseDashboard from '@/components/easy/BillWiseDashboard';
 import DebitCreditNotes from '@/components/easy/DebitCreditNotes';
 import MemoVoucherDashboard from '@/components/easy/MemoVoucherDashboard';
 import GSTReturnDashboard from '@/components/easy/GSTReturnDashboard';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee } from 'lucide-react';
+import GSTReconDashboard from '@/components/easy/GSTReconDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
@@ -51,6 +52,7 @@ const Index = () => {
     { key: 'notes', label: 'Dr/Cr Notes', icon: <FileMinus className="h-4 w-4" /> },
     { key: 'memo', label: 'Memo', icon: <StickyNote className="h-4 w-4" /> },
     { key: 'gst', label: 'GST Returns', icon: <IndianRupee className="h-4 w-4" /> },
+    { key: 'gstrecon', label: 'GST Recon', icon: <GitCompare className="h-4 w-4" /> },
   ];
 
   return (
@@ -98,6 +100,7 @@ const Index = () => {
             {activeTab === 'notes' && <DebitCreditNotes />}
             {activeTab === 'memo' && <MemoVoucherDashboard />}
             {activeTab === 'gst' && <GSTReturnDashboard />}
+            {activeTab === 'gstrecon' && <GSTReconDashboard />}
           </>
         )}
       </div>
