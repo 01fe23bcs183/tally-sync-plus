@@ -4,10 +4,11 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Search, Plus } from 'lucide-react';
+import { Search, Plus, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { VoucherType } from '@/types/tally';
 import VoucherEntryForm from './VoucherEntryForm';
+import BulkVoucherImport from './BulkVoucherImport';
 import { useQueryClient } from '@tanstack/react-query';
 
 const formatCurrency = (n: number) => `₹${n.toLocaleString('en-IN', { minimumFractionDigits: 2 })}`;
@@ -28,6 +29,7 @@ const EasyVouchers = () => {
   const [search, setSearch] = useState('');
   const [filterType, setFilterType] = useState<string>('all');
   const [showForm, setShowForm] = useState(false);
+  const [showBulkImport, setShowBulkImport] = useState(false);
   const queryClient = useQueryClient();
 
   const filtered = vouchers
@@ -38,6 +40,17 @@ const EasyVouchers = () => {
       (v.partyName || '').toLowerCase().includes(search.toLowerCase())
     )
     .sort((a, b) => b.date.localeCompare(a.date));
+
+  if (showBulkImport) {
+    return (
+      <div className="p-6 max-w-[900px] mx-auto">
+        <BulkVoucherImport
+          onClose={() => setShowBulkImport(false)}
+          onDone={() => queryClient.invalidateQueries({ queryKey: ['vouchers'] })}
+        />
+      </div>
+    );
+  }
 
   if (showForm) {
     return (
@@ -54,9 +67,14 @@ const EasyVouchers = () => {
     <div className="p-6 max-w-[1200px] mx-auto space-y-4">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold">Vouchers</h2>
-        <Button size="sm" className="gap-1" onClick={() => setShowForm(true)}>
-          <Plus className="h-4 w-4" /> New Voucher
-        </Button>
+        <div className="flex gap-2">
+          <Button size="sm" variant="outline" className="gap-1" onClick={() => setShowBulkImport(true)}>
+            <Upload className="h-4 w-4" /> Bulk Import
+          </Button>
+          <Button size="sm" className="gap-1" onClick={() => setShowForm(true)}>
+            <Plus className="h-4 w-4" /> New Voucher
+          </Button>
+        </div>
       </div>
 
       <div className="flex gap-3 flex-wrap">
