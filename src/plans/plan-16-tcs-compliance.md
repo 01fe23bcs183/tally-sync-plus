@@ -20,6 +20,40 @@ Auto-detect TCS applicability, compute and add TCS to invoices, track thresholds
 4. **Return Preparation**: Generate data for TCS quarterly return
 5. **Compliance Dashboard**: Overview of TCS collected, deposited, pending
 
+
+## UI — Easy Mode
+```
+┌──────────────────────────────────────────────────┐
+│ TCS Dashboard                                    │
+├──────────────────────────────────────────────────┤
+│ Total Collected: ₹45,200  Pending: ₹15,200      │
+│ ┌────────────┬──────────┬────────┬────────┐     │
+│ │ Party      │ Section  │ Sale   │ TCS    │     │
+│ │ Buyer Corp │ 206C(1H) │ 52L    │ 5,200  │     │
+│ │ Retail Ltd │ 206C(1H) │ 80L    │ 20,000 │     │
+│ └────────────┴──────────┴────────┴────────┘     │
+│ [Auto-Apply TCS]  [Generate Challan]  [27EQ]     │
+└──────────────────────────────────────────────────┘
+```
+- Visual TCS summary, one-click challan generation
+
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ TCS Register          Period: Q1 FY 2025-26      │
+│──────────────────────────────────────────────────│
+│ Party           Section    Sale Amt   TCS Amt    │
+│──────────────────────────────────────────────────│
+│ Buyer Corp      206C(1H)  52,00,000    5,200    │
+│ Retail Ltd      206C(1H)  80,00,000   20,000    │
+│──────────────────────────────────────────────────│
+│ F5:Collect  F7:Challan  F8:27EQ  Alt+P:Print     │
+└──────────────────────────────────────────────────┘
+```
+- Tally-style register, F5/F7/F8 shortcuts
+
+
 ## Implementation Steps
 1. Build TCS section master with rules and thresholds
 2. Create buyer-wise cumulative tracking

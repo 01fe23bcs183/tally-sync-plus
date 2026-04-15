@@ -37,6 +37,27 @@ Automated TDS management with section detection, threshold tracking, challan gen
 └────────────────────────────────────────────┘
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ TDS Deduction                                    │
+│──────────────────────────────────────────────────│
+│ Party: Professional Services Ltd                 │
+│ Section: 194J   Rate: 10%                        │
+│ Payment: 1,00,000   TDS: 10,000                 │
+│──────────────────────────────────────────────────│
+│ TDS Register (Q1):                               │
+│ Party              Section  Deducted  Deposited  │
+│ Prof Services      194J     30,000    20,000     │
+│ Contractor ABC     194C     15,000    15,000     │
+│──────────────────────────────────────────────────│
+│ F5:Deduct  F7:Challan  F8:26Q  Alt+R:Return      │
+└──────────────────────────────────────────────────┘
+```
+- F5 to create deduction, F7 for challan, F8 for Form 26Q
+
+
 ## Implementation Steps
 1. Build TDS section master with rates and thresholds
 2. Create threshold tracking per party per section

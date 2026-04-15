@@ -20,6 +20,41 @@ Reliable e-invoice generation with batch processing, QR code embedding, and clea
 4. **IRN Management**: View, cancel, amend IRNs with reason tracking
 5. **Error Recovery**: Clear error messages with retry and manual fix options
 
+
+## UI — Easy Mode
+```
+┌──────────────────────────────────────────────────┐
+│ E-Invoice Generation                             │
+├──────────────────────────────────────────────────┤
+│ ☑ INV-225  Raj Traders    ₹1,75,000  Ready ✓    │
+│ ☑ INV-226  XYZ Corp       ₹2,30,000  Ready ✓    │
+│ ☐ INV-227  ABC Ltd        ₹45,000   Missing GSTN│
+│ IRN: 7b3df8...  QR: [██████]  Status: ✓         │
+│ [Generate IRN]  [Bulk Generate]  [Cancel IRN]    │
+└──────────────────────────────────────────────────┘
+```
+- Checkbox selection for bulk IRN generation
+- Visual QR code preview, status badges
+
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ E-Invoice Register                               │
+│──────────────────────────────────────────────────│
+│ Invoice    Party          Amount    IRN Status    │
+│──────────────────────────────────────────────────│
+│ INV-225    Raj Traders   1,75,000   Generated    │
+│ INV-226    XYZ Corp      2,30,000   Generated    │
+│ INV-227    ABC Ltd         45,000   Pending      │
+│──────────────────────────────────────────────────│
+│ F5:Generate  F8:Cancel IRN  Alt+Q:QR  Ctrl+B:Bulk│
+└──────────────────────────────────────────────────┘
+```
+- F5 to generate IRN, F8 to cancel
+- Alt+Q to view QR code, Ctrl+B for bulk
+
+
 ## Implementation Steps
 1. Integrate with e-Invoice API (NIC portal)
 2. Build batch IRN generation queue

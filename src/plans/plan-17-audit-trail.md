@@ -21,6 +21,41 @@ Visual audit trail with advanced filtering, diff views, and auditor-friendly exp
 5. **Tamper Detection**: Hash-based verification of audit trail integrity
 6. **Compliance Dashboard**: Show compliance status with regulatory requirements
 
+
+## UI — Easy Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Audit Trail                                      │
+├──────────────────────────────────────────────────┤
+│ ┌──────┬────────┬────────────┬────────────────┐  │
+│ │ Time │ User   │ Action     │ Details        │  │
+│ │ 14:32│ Admin  │ ✏️ Edited  │ S-001: ₹175K→180K│ │
+│ │ 14:28│ Admin  │ ➕ Created │ J-005: ₹50,000 │  │
+│ │ 13:15│ Clerk  │ 🗑️ Deleted │ P-003: ₹12,000 │  │
+│ └──────┴────────┴────────────┴────────────────┘  │
+│ [Export Log]  [Compliance Report]                 │
+└──────────────────────────────────────────────────┘
+```
+- Timeline view with action icons, diff view for edits
+
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ Audit Trail Register                             │
+│──────────────────────────────────────────────────│
+│ Date/Time      User    Action   Voucher  Details │
+│──────────────────────────────────────────────────│
+│ 15-Apr 14:32   Admin   Alter    S-001    Amt Chg │
+│ 15-Apr 14:28   Admin   Create   J-005    New     │
+│ 15-Apr 13:15   Clerk   Delete   P-003    Removed │
+│──────────────────────────────────────────────────│
+│ F5:Details  F7:Filter  Alt+P:Print  Ctrl+E:Export│
+└──────────────────────────────────────────────────┘
+```
+- Tally-style register, F5 for before/after details
+
+
 ## Implementation Steps
 1. Fetch audit trail data from Tally (if available via XML)
 2. Build our own change tracking layer for app-level changes

@@ -39,6 +39,26 @@ Upload GSTR-2A/2B JSON, auto-reconcile with Tally purchases, and generate action
 └─────────────────────────────────────────────────┘
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ GST Reconciliation: GSTR-2A vs Purchase Register │
+│──────────────────────────────────────────────────│
+│ Status      Invoices   Taxable      Tax          │
+│──────────────────────────────────────────────────│
+│ Matched        142    12,40,000   2,23,200       │
+│ Mismatched       8       65,000     11,700       │
+│ Missing in 2A   12    1,05,000     18,900       │
+│ Extra in 2A      5      42,000      7,560       │
+│──────────────────────────────────────────────────│
+│ F5:Reconcile  F8:Details  Alt+U:Upload 2A        │
+└──────────────────────────────────────────────────┘
+```
+- Enter on any row to see detailed mismatches
+- F5 to auto-reconcile, Alt+U to upload GSTR-2A
+
+
 ## Implementation Steps
 1. Build GSTR-2A/2B JSON parser
 2. Fetch purchase vouchers from Tally

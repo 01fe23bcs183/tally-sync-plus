@@ -62,6 +62,28 @@ Auto-generate GSTR-1, GSTR-3B, and GSTR-9 from Tally data with validation, error
 </REQUESTDESC></EXPORTDATA></BODY></ENVELOPE>
 ```
 
+
+## UI — Tally Mode
+```
+┌──────────────────────────────────────────────────┐
+│ GST Return: GSTR-1    Period: Apr 2026           │
+│──────────────────────────────────────────────────│
+│ Section          Invoices    Taxable    Tax      │
+│──────────────────────────────────────────────────│
+│ B2B              45          18,50,000  3,33,000 │
+│ B2C (Large)      12           4,20,000    75,600 │
+│ B2C (Others)     128          8,60,000  1,54,800 │
+│ Credit/Debit     5              45,000    8,100  │
+│ Exports          3            2,10,000        0  │
+│──────────────────────────────────────────────────│
+│ Total            193         33,85,000  5,71,500 │
+│ F5:Generate  F8:Validate  Alt+F:File  Ctrl+E:Exp │
+└──────────────────────────────────────────────────┘
+```
+- Tally-style tabular GSTR summary
+- F5 to generate, F8 to validate, Alt+F to file
+
+
 ## Implementation Steps
 1. Fetch GST voucher data from Tally
 2. Build GSTR-1 section classifier (B2B, B2CS, etc.)
