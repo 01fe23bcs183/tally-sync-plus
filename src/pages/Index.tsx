@@ -145,6 +145,7 @@ const Index = () => {
             {activeTab === 'stockaging' && <StockAgingDashboard />}
             {activeTab === 'reorder' && <ReorderAlertDashboard />}
             {activeTab === 'reports' && <CustomReportDashboard />}
+            {activeTab === 'cashflow' && <CashFlowDashboard />}
           </>
         )}
       </div>
