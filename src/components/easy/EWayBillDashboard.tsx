@@ -7,7 +7,7 @@ import {
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter
 } from '@/components/ui/dialog';
 import {
-  CheckCircle2, Clock, XCircle, AlertTriangle, Zap, Truck,
+  CheckCircle2, Clock, XCircle, Zap, Truck,
   MapPin, ArrowRight, Timer
 } from 'lucide-react';
 import {

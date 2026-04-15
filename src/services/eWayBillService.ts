@@ -28,7 +28,7 @@ export interface EWayBill {
 const MODE_LABELS: Record<TransportMode, string> = { road: '🚛 Road', rail: '🚂 Rail', air: '✈️ Air', ship: '🚢 Ship' };
 export function getTransportLabel(m: TransportMode) { return MODE_LABELS[m]; }
 
-function daysLeft(d: string): number { return Math.max(0, Math.ceil((new Date(d).getTime() - new Date('2026-04-15').getTime()) / 86400000)); }
+
 
 const DEMO: EWayBill[] = [
   { id: 'ew1', invoiceNo: 'INV-2026-0225', invoiceDate: '2026-04-02', partyName: 'Raj Traders', gstin: '07AAACR5678F1ZQ', fromCity: 'Mumbai', fromState: 'MH', toCity: 'Delhi', toState: 'DL', transportMode: 'road', vehicleNo: 'MH02AB1234', transporterName: 'FastTrack Logistics', distance: 1400, invoiceValue: 206500, status: 'generated', ewbNo: '3210 0012 3456', ewbDate: '2026-04-02', validUpto: '2026-04-16', daysRemaining: 1 },
