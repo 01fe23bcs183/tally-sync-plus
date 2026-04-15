@@ -23,9 +23,10 @@ import EWayBillDashboard from '@/components/easy/EWayBillDashboard';
 import TDSDashboard from '@/components/easy/TDSDashboard';
 import TCSDashboard from '@/components/easy/TCSDashboard';
 import AuditTrailDashboard from '@/components/easy/AuditTrailDashboard';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList } from 'lucide-react';
+import BarcodeDashboard from '@/components/easy/BarcodeDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList, ScanBarcode } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'barcode' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
@@ -63,6 +64,7 @@ const Index = () => {
     { key: 'tds', label: 'TDS', icon: <Scissors className="h-4 w-4" /> },
     { key: 'tcs', label: 'TCS', icon: <ShieldCheck className="h-4 w-4" /> },
     { key: 'audit', label: 'Audit Trail', icon: <ClipboardList className="h-4 w-4" /> },
+    { key: 'barcode', label: 'Barcode', icon: <ScanBarcode className="h-4 w-4" /> },
   ];
 
   return (
@@ -116,6 +118,7 @@ const Index = () => {
             {activeTab === 'tds' && <TDSDashboard />}
             {activeTab === 'tcs' && <TCSDashboard />}
             {activeTab === 'audit' && <AuditTrailDashboard />}
+            {activeTab === 'barcode' && <BarcodeDashboard />}
           </>
         )}
       </div>
