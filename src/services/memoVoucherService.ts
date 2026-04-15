@@ -35,10 +35,10 @@ const DEMO_RAW = [
   { id: 'm5', memoNumber: 'M-012', date: '2026-04-10', voucherType: 'Payment', partyName: 'Office Rent', amount: 35000, narration: 'Rent for May — pending approval', category: 'pending_approval', status: 'pending', agingDays: 0, entries: [{ ledgerName: 'Rent Expense', amount: 35000, isDebit: true }, { ledgerName: 'HDFC Bank', amount: 35000, isDebit: false }] },
   { id: 'm6', memoNumber: 'M-006', date: '2026-03-10', voucherType: 'Sales', partyName: 'Kumar & Sons', amount: 60000, narration: 'Sales estimate — converted', category: 'estimate', status: 'converted', agingDays: 0, entries: [{ ledgerName: 'Kumar & Sons', amount: 60000, isDebit: true }, { ledgerName: 'Sales Account', amount: 60000, isDebit: false }] },
   { id: 'm7', memoNumber: 'M-005', date: '2026-02-28', voucherType: 'Purchase', partyName: 'Raw Material Co', amount: 40000, narration: 'Cancelled — supplier issue', category: 'other', status: 'cancelled', agingDays: 0, entries: [{ ledgerName: 'Purchase Account', amount: 40000, isDebit: true }, { ledgerName: 'Raw Material Co', amount: 40000, isDebit: false }] },
-].map(m => ({ ...m, agingDays: daysSince(m.date) }));
+].map(m => ({ ...m, agingDays: daysSince(m.date) })) as MemoVoucher[];
 
-export function getMemoVouchers(): MemoVoucher[] { return DEMO; }
-export function getPendingMemos(): MemoVoucher[] { return DEMO.filter(m => m.status === 'pending'); }
+export function getMemoVouchers(): MemoVoucher[] { return DEMO_RAW; }
+export function getPendingMemos(): MemoVoucher[] { return DEMO_RAW.filter(m => m.status === 'pending'); }
 
 export function formatMemoAmt(a: number): string {
   const abs = Math.abs(a);
