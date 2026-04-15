@@ -24,8 +24,6 @@ import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLe
 
 type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'settings';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'settings';
-
 const Index = () => {
   const { mode } = useApp();
   const [activeTab, setActiveTab] = useState<EasyTab>('dashboard');
