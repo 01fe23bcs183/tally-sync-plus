@@ -136,6 +136,7 @@ const Index = () => {
             {activeTab === 'manufacturing' && <ManufacturingDashboard />}
             {activeTab === 'purchaseorders' && <PurchaseOrderDashboard />}
             {activeTab === 'salesorders' && <SalesOrderDashboard />}
+            {activeTab === 'stockaging' && <StockAgingDashboard />}
           </>
         )}
       </div>
