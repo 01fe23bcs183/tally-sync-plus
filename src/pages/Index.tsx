@@ -29,9 +29,10 @@ import MultiGodownDashboard from '@/components/easy/MultiGodownDashboard';
 import ManufacturingDashboard from '@/components/easy/ManufacturingDashboard';
 import PurchaseOrderDashboard from '@/components/easy/PurchaseOrderDashboard';
 import SalesOrderDashboard from '@/components/easy/SalesOrderDashboard';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList, ScanBarcode, FlaskConical, Warehouse, Factory, ShoppingCart, ShoppingBag } from 'lucide-react';
+import StockAgingDashboard from '@/components/easy/StockAgingDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList, ScanBarcode, FlaskConical, Warehouse, Factory, ShoppingCart, ShoppingBag, Clock } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'barcode' | 'batch' | 'godowns' | 'manufacturing' | 'purchaseorders' | 'salesorders' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'barcode' | 'batch' | 'godowns' | 'manufacturing' | 'purchaseorders' | 'salesorders' | 'stockaging' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
