@@ -10,10 +10,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Textarea } from '@/components/ui/textarea';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import {
-  Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter
+  Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger
 } from '@/components/ui/dialog';
 import {
-  Save, X, Plus, Trash2, AlertTriangle, CheckCircle, Copy, BookmarkPlus,
+  Save, X, Plus, Trash2, AlertTriangle, Copy, BookmarkPlus,
   Zap, AlertCircle
 } from 'lucide-react';
 import LedgerAutocomplete from './LedgerAutocomplete';
