@@ -27,7 +27,7 @@ const CATEGORY_LABELS: Record<MemoCategory, string> = {
 
 export function getCategoryLabel(c: MemoCategory) { return CATEGORY_LABELS[c]; }
 
-const DEMO: MemoVoucher[] = [
+const DEMO_RAW = [
   { id: 'm1', memoNumber: 'M-008', date: '2026-03-25', voucherType: 'Sales', partyName: 'ABC Corp', amount: 50000, narration: 'Provisional sales — awaiting PO confirmation', category: 'provisional', status: 'pending', agingDays: 0, entries: [{ ledgerName: 'ABC Corp', amount: 50000, isDebit: true }, { ledgerName: 'Sales Account', amount: 50000, isDebit: false }] },
   { id: 'm2', memoNumber: 'M-009', date: '2026-03-28', voucherType: 'Purchase', partyName: 'Steel Suppliers Ltd', amount: 120000, narration: 'Estimated purchase cost — pending invoice', category: 'estimate', status: 'pending', agingDays: 0, entries: [{ ledgerName: 'Purchase Account', amount: 120000, isDebit: true }, { ledgerName: 'Steel Suppliers Ltd', amount: 120000, isDebit: false }] },
   { id: 'm3', memoNumber: 'M-010', date: '2026-04-02', voucherType: 'Journal', partyName: '', amount: 25000, narration: 'Provision for audit fees', category: 'provisional', status: 'pending', agingDays: 0, entries: [{ ledgerName: 'Audit Fees', amount: 25000, isDebit: true }, { ledgerName: 'Provision for Expenses', amount: 25000, isDebit: false }] },
