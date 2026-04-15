@@ -30,9 +30,10 @@ import ManufacturingDashboard from '@/components/easy/ManufacturingDashboard';
 import PurchaseOrderDashboard from '@/components/easy/PurchaseOrderDashboard';
 import SalesOrderDashboard from '@/components/easy/SalesOrderDashboard';
 import StockAgingDashboard from '@/components/easy/StockAgingDashboard';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList, ScanBarcode, FlaskConical, Warehouse, Factory, ShoppingCart, ShoppingBag, Clock } from 'lucide-react';
+import ReorderAlertDashboard from '@/components/easy/ReorderAlertDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList, ScanBarcode, FlaskConical, Warehouse, Factory, ShoppingCart, ShoppingBag, Clock, BellRing } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'barcode' | 'batch' | 'godowns' | 'manufacturing' | 'purchaseorders' | 'salesorders' | 'stockaging' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'barcode' | 'batch' | 'godowns' | 'manufacturing' | 'purchaseorders' | 'salesorders' | 'stockaging' | 'reorder' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
@@ -77,6 +78,7 @@ const Index = () => {
     { key: 'purchaseorders', label: 'Purchase Orders', icon: <ShoppingCart className="h-4 w-4" /> },
     { key: 'salesorders', label: 'Sales Orders', icon: <ShoppingBag className="h-4 w-4" /> },
     { key: 'stockaging', label: 'Stock Aging', icon: <Clock className="h-4 w-4" /> },
+    { key: 'reorder', label: 'Reorder Alerts', icon: <BellRing className="h-4 w-4" /> },
   ];
 
   return (
@@ -137,6 +139,7 @@ const Index = () => {
             {activeTab === 'purchaseorders' && <PurchaseOrderDashboard />}
             {activeTab === 'salesorders' && <SalesOrderDashboard />}
             {activeTab === 'stockaging' && <StockAgingDashboard />}
+            {activeTab === 'reorder' && <ReorderAlertDashboard />}
           </>
         )}
       </div>
