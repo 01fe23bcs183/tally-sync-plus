@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   ChevronDown, ChevronRight, Receipt, CreditCard, Clock,
   ArrowUpRight, ArrowDownRight
@@ -13,7 +12,7 @@ import {
 } from 'recharts';
 import {
   getPartyOutstandings, getAgingSummary, getBillsByType,
-  formatBillAmt, PartyOutstanding
+  formatBillAmt
 } from '@/services/billWiseService';
 
 const BillWiseDashboard = () => {
