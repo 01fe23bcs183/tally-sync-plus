@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Progress } from '@/components/ui/progress';
 import {
-  AlertTriangle, AlertCircle, CheckCircle2, TrendingUp, TrendingDown,
+  AlertTriangle, AlertCircle, CheckCircle2,
   BarChart3, Bell, Table2, Calendar
 } from 'lucide-react';
 import {
@@ -14,7 +14,7 @@ import {
 } from 'recharts';
 import {
   getBudgetSummary, getMonthlyComparison, getMonths,
-  formatBudgetAmount, BudgetAlert
+  formatBudgetAmount
 } from '@/services/budgetService';
 
 const BudgetDashboard = () => {
