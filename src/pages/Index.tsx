@@ -20,9 +20,10 @@ import GSTReturnDashboard from '@/components/easy/GSTReturnDashboard';
 import GSTReconDashboard from '@/components/easy/GSTReconDashboard';
 import EInvoiceDashboard from '@/components/easy/EInvoiceDashboard';
 import EWayBillDashboard from '@/components/easy/EWayBillDashboard';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck } from 'lucide-react';
+import TDSDashboard from '@/components/easy/TDSDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
@@ -57,6 +58,7 @@ const Index = () => {
     { key: 'gstrecon', label: 'GST Recon', icon: <GitCompare className="h-4 w-4" /> },
     { key: 'einvoice', label: 'E-Invoice', icon: <FileCheck className="h-4 w-4" /> },
     { key: 'ewaybill', label: 'E-Way Bill', icon: <Truck className="h-4 w-4" /> },
+    { key: 'tds', label: 'TDS', icon: <Scissors className="h-4 w-4" /> },
   ];
 
   return (
@@ -107,6 +109,7 @@ const Index = () => {
             {activeTab === 'gstrecon' && <GSTReconDashboard />}
             {activeTab === 'einvoice' && <EInvoiceDashboard />}
             {activeTab === 'ewaybill' && <EWayBillDashboard />}
+            {activeTab === 'tds' && <TDSDashboard />}
           </>
         )}
       </div>
