@@ -122,3 +122,27 @@
 | 78 | [Data Import from Other Software](plan-78-data-import.md) | 🔴 |
 | 79 | [Automated Report Scheduling & Email](plan-79-report-scheduling.md) | 🔴 |
 | 80 | [AI-Powered Anomaly Detection](plan-80-anomaly-detection.md) | 🔴 |
+
+## CRUD Operations (Database + Full CRUD for All Modules)
+| # | Feature | Covers Plans |
+|---|---------|-------------|
+| 81 | [CRUD: Ledger Masters & Account Groups](plan-81-crud-ledgers-groups.md) | 01, 04, 08, 30, 68 |
+| 82 | [CRUD: Voucher Entry & Management](plan-82-crud-vouchers.md) | 01, 02, 09, 10, 39, 40, 66, 71 |
+| 83 | [CRUD: Stock Items, Groups & Units](plan-83-crud-stock-inventory.md) | 18, 19, 24, 25 |
+| 84 | [CRUD: Cost Centers & Budgets](plan-84-crud-cost-centers-budgets.md) | 04, 05, 28 |
+| 85 | [CRUD: Bank Reconciliation & Cash/Bank Book](plan-85-crud-bank-reconciliation.md) | 06, 69, 72 |
+| 86 | [CRUD: GST Configuration & Tax Masters](plan-86-crud-gst-tax-config.md) | 11, 12 |
+| 87 | [CRUD: E-Invoice & E-Way Bill](plan-87-crud-einvoice-ewaybill.md) | 13, 14 |
+| 88 | [CRUD: TDS & TCS Management](plan-88-crud-tds-tcs.md) | 15, 16 |
+| 89 | [CRUD: Multi-Currency & Forex](plan-89-crud-multicurrency.md) | 03 |
+| 90 | [CRUD: Bill-Wise Details & Interest](plan-90-crud-billwise-interest.md) | 07, 08, 30 |
+| 91 | [CRUD: Debit/Credit Notes & Memo Vouchers](plan-91-crud-debitnote-memo.md) | 09, 10 |
+| 92 | [CRUD: Multi-Godown & Stock Transfers](plan-92-crud-godown-transfer.md) | 20 |
+| 93 | [CRUD: Manufacturing & BOM](plan-93-crud-manufacturing-bom.md) | 21 |
+| 94 | [CRUD: Purchase & Sales Orders](plan-94-crud-purchase-sales-orders.md) | 22, 23 |
+| 95 | [CRUD: Reports, Analytics & Dashboard](plan-95-crud-reports-analytics.md) | 26, 27, 28, 29, 31, 32, 33, 77, 79 |
+| 96 | [CRUD: Audit Trail & Activity Log](plan-96-crud-audit-trail.md) | 17, 50, 59 |
+| 97 | [CRUD: Company, Users & Preferences](plan-97-crud-company-settings.md) | 34, 35, 37, 38, 41, 45, 48, 70, 77 |
+| 98 | [CRUD: Invoicing, Sharing & Documents](plan-98-crud-invoicing-sharing.md) | 42, 67, 68, 74, 75 |
+| 99 | [CRUD: Backup, Import, Sync & Offline](plan-99-crud-backup-import-sync.md) | 44, 46, 47, 49, 64, 78 |
+| 100 | [CRUD: Agent, Security & Platform](plan-100-crud-agent-security-platform.md) | 36, 43, 51-55, 56-58, 60-63, 65, 73, 76, 80 |
