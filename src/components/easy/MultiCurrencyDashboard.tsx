@@ -319,7 +319,7 @@ const MultiCurrencyDashboard = () => {
                       outerRadius={90}
                       innerRadius={50}
                       dataKey="value"
-                      label={({ currency, percent }) => `${currency} ${(percent * 100).toFixed(0)}%`}
+                      label={(props: any) => `${props.currency} ${((props.percent ?? 0) * 100).toFixed(0)}%`}
                     >
                       {exposureByCurrency.map((_, i) => (
                         <Cell key={i} fill={COLORS[i % COLORS.length]} />
