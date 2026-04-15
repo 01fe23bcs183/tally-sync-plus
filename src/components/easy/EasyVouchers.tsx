@@ -4,9 +4,11 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Search, Plus, Filter } from 'lucide-react';
+import { Search, Plus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { VoucherType } from '@/types/tally';
+import VoucherEntryForm from './VoucherEntryForm';
+import { useQueryClient } from '@tanstack/react-query';
 
 const formatCurrency = (n: number) => `₹${n.toLocaleString('en-IN', { minimumFractionDigits: 2 })}`;
 
@@ -25,6 +27,8 @@ const EasyVouchers = () => {
   const { data: vouchers = [] } = useVouchers();
   const [search, setSearch] = useState('');
   const [filterType, setFilterType] = useState<string>('all');
+  const [showForm, setShowForm] = useState(false);
+  const queryClient = useQueryClient();
 
   const filtered = vouchers
     .filter(v => filterType === 'all' || v.voucherType === filterType)
@@ -35,11 +39,24 @@ const EasyVouchers = () => {
     )
     .sort((a, b) => b.date.localeCompare(a.date));
 
+  if (showForm) {
+    return (
+      <div className="p-6 max-w-[900px] mx-auto">
+        <VoucherEntryForm
+          onClose={() => setShowForm(false)}
+          onSaved={() => queryClient.invalidateQueries({ queryKey: ['vouchers'] })}
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="p-6 max-w-[1200px] mx-auto space-y-4">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold">Vouchers</h2>
-        <Button size="sm" className="gap-1"><Plus className="h-4 w-4" /> New Voucher</Button>
+        <Button size="sm" className="gap-1" onClick={() => setShowForm(true)}>
+          <Plus className="h-4 w-4" /> New Voucher
+        </Button>
       </div>
 
       <div className="flex gap-3 flex-wrap">
