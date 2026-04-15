@@ -27,9 +27,10 @@ import BarcodeDashboard from '@/components/easy/BarcodeDashboard';
 import BatchExpiryDashboard from '@/components/easy/BatchExpiryDashboard';
 import MultiGodownDashboard from '@/components/easy/MultiGodownDashboard';
 import ManufacturingDashboard from '@/components/easy/ManufacturingDashboard';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList, ScanBarcode, FlaskConical, Warehouse, Factory } from 'lucide-react';
+import PurchaseOrderDashboard from '@/components/easy/PurchaseOrderDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList, ScanBarcode, FlaskConical, Warehouse, Factory, ShoppingCart } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'barcode' | 'batch' | 'godowns' | 'manufacturing' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'barcode' | 'batch' | 'godowns' | 'manufacturing' | 'purchaseorders' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
@@ -71,6 +72,7 @@ const Index = () => {
     { key: 'batch', label: 'Batch/Expiry', icon: <FlaskConical className="h-4 w-4" /> },
     { key: 'godowns', label: 'Godowns', icon: <Warehouse className="h-4 w-4" /> },
     { key: 'manufacturing', label: 'Manufacturing', icon: <Factory className="h-4 w-4" /> },
+    { key: 'purchaseorders', label: 'Purchase Orders', icon: <ShoppingCart className="h-4 w-4" /> },
   ];
 
   return (
@@ -128,6 +130,7 @@ const Index = () => {
             {activeTab === 'batch' && <BatchExpiryDashboard />}
             {activeTab === 'godowns' && <MultiGodownDashboard />}
             {activeTab === 'manufacturing' && <ManufacturingDashboard />}
+            {activeTab === 'purchaseorders' && <PurchaseOrderDashboard />}
           </>
         )}
       </div>
