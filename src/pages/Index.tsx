@@ -12,9 +12,10 @@ import MultiCurrencyDashboard from '@/components/easy/MultiCurrencyDashboard';
 import CostCenterDashboard from '@/components/easy/CostCenterDashboard';
 import BudgetDashboard from '@/components/easy/BudgetDashboard';
 import BankReconciliation from '@/components/easy/BankReconciliation';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2 } from 'lucide-react';
+import InterestDashboard from '@/components/easy/InterestDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
@@ -41,6 +42,7 @@ const Index = () => {
     { key: 'costcenters', label: 'Cost Centers', icon: <FolderTree className="h-4 w-4" /> },
     { key: 'budget', label: 'Budget', icon: <Wallet className="h-4 w-4" /> },
     { key: 'reconciliation', label: 'Bank Recon', icon: <Building2 className="h-4 w-4" /> },
+    { key: 'interest', label: 'Interest', icon: <Percent className="h-4 w-4" /> },
   ];
 
   return (
@@ -83,6 +85,7 @@ const Index = () => {
             {activeTab === 'costcenters' && <CostCenterDashboard />}
             {activeTab === 'budget' && <BudgetDashboard />}
             {activeTab === 'reconciliation' && <BankReconciliation />}
+            {activeTab === 'interest' && <InterestDashboard />}
           </>
         )}
       </div>
