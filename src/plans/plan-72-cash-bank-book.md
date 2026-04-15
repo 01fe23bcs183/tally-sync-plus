@@ -21,6 +21,15 @@ Build a modern visual cash book and bank book with running balance charts, drag-
 5. **Drag-Drop Match**: Manually drag statement entry to voucher to match
 6. **Reconciliation Report**: Show matched, unmatched, discrepancies
 
+
+## UI — Easy Mode
+Visual cash book with running balance chart, drag-drop bank matching, reconciliation summary
+
+
+## UI — Tally Mode
+Cash/Bank book in Tally's register format, running balance column, F5 to reconcile, bank date entry for BRS
+
+
 ## Implementation Steps
 1. Build visual cash book component with chart
 2. Create bank book with per-bank filtering

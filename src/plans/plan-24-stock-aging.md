@@ -39,6 +39,15 @@ Stock aging dashboard with ABC analysis, carrying cost estimation, and liquidati
 └──────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Heat map of stock age, slow-moving items highlighted in red, interactive charts with drill-down, dead stock alert cards
+
+
+## UI — Tally Mode
+Stock aging analysis report in Tally columnar format, age-wise brackets, F5 for item details, Alt+P to print aging report
+
+
 ## Implementation Steps
 1. Fetch stock movement data from Tally
 2. Calculate last movement date per item

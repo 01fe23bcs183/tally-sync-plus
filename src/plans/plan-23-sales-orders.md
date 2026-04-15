@@ -20,6 +20,15 @@ Sales order pipeline with visual tracking, partial delivery management, and auto
 4. **Delivery Schedule**: Calendar view of upcoming deliveries
 5. **Order Analytics**: Conversion rate, average fulfillment time
 
+
+## UI — Easy Mode
+Sales pipeline kanban board, order-to-invoice conversion wizard, partial delivery tracking with visual progress
+
+
+## UI — Tally Mode
+Sales order register in Tally format, F5 to convert to delivery note/invoice, pending order list, order fulfillment status
+
+
 ## Implementation Steps
 1. Sync sales orders from Tally
 2. Build pipeline Kanban view

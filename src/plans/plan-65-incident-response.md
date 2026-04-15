@@ -21,6 +21,15 @@ Build an automated security incident detection and response system. Pattern-base
 5. **Incident Dashboard**: Real-time view of active incidents and response status
 6. **Response Playbook**: Step-by-step procedures for different incident types
 
+
+## UI — Easy Mode
+Security alert dashboard, incident timeline, lockdown toggle, notification chain status
+
+
+## UI — Tally Mode
+Security alerts shown as notifications, auto-lockdown transparent, Alt+N shows security alerts in notification list
+
+
 ## Implementation Steps
 1. Build detection rules engine (failed logins, unusual patterns, bulk exports)
 2. Implement auto-lockdown actions (account disable, IP block, session revoke)

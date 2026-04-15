@@ -21,6 +21,15 @@ Full theme system with dark mode, multiple pre-built themes, custom theme builde
 5. **Accessibility**: High contrast, large text, reduced motion options
 6. **Schedule**: Auto-switch dark mode at sunset
 
+
+## UI — Easy Mode
+Theme preview cards with live preview, color picker panel, font selector, custom theme builder
+
+
+## UI — Tally Mode
+F12:Configure theme selection, Alt+T to cycle themes, Tally Classic theme option preserves original look
+
+
 ## Implementation Steps
 1. Define theme token system (CSS variables)
 2. Create theme switching infrastructure

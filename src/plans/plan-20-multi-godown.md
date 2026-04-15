@@ -20,6 +20,15 @@ Visual multi-godown dashboard with drag-drop transfers, per-godown reorder level
 4. **Transfer History**: Track all inter-godown movements
 5. **Stock Verification**: Godown-specific stock count workflow
 
+
+## UI — Easy Mode
+Warehouse cards with stock levels, drag-drop transfer between godowns, map view of locations, godown comparison charts
+
+
+## UI — Tally Mode
+Godown-wise stock summary table, F5 to select godown during entry, transfer note entry matching Tally's format, Alt+G for godown list
+
+
 ## Implementation Steps
 1. Sync godown masters and godown-wise stock from Tally
 2. Build visual godown dashboard with stock summaries

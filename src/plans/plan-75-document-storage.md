@@ -22,6 +22,15 @@ Build a document management system integrated with vouchers and ledgers. Attach 
 6. **Mandatory Rules**: Require attachment for specific voucher types (purchases > ₹10k)
 7. **Audit View**: See all vouchers with/without supporting documents
 
+
+## UI — Easy Mode
+Document drop zone on voucher form, thumbnail previews, search by document content, attachment badges
+
+
+## UI — Tally Mode
+Alt+A to attach document to current voucher, F5 to view attachments, document list with voucher links, camera capture
+
+
 ## Implementation Steps
 1. Build document upload and storage system
 2. Create voucher-document linking UI

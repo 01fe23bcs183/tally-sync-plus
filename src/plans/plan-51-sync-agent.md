@@ -86,6 +86,15 @@ Build a lightweight desktop agent (Electron/Node.js) that runs as a system tray 
 5. Cloud processes and stores data
 6. Web app receives real-time updates via WebSocket subscription
 
+
+## UI — Easy Mode
+System tray app with status icon (green=connected, red=disconnected), connection dashboard, sync history
+
+
+## UI — Tally Mode
+Agent runs as background service with no UI in Tally Mode — Tally Mode accesses data that agent syncs to cloud
+
+
 ## Implementation Steps
 1. Set up Electron project with system tray support
 2. Build Tally XML connector (reuse existing `tallyXmlService.ts` logic)

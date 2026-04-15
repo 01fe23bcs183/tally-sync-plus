@@ -48,6 +48,15 @@ Build a multi-instance manager that can discover Tally instances on the local ma
 └─────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Instance cards with connection status, network scan button, company routing config panel
+
+
+## UI — Tally Mode
+Multi-instance managed via agent UI — Tally Mode auto-connects to correct company data, Alt+F3 shows all instances
+
+
 ## Implementation Steps
 1. Build network scanner for Tally XML API endpoints (port 9000)
 2. Implement connection pool with per-instance state management

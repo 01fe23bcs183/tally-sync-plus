@@ -43,6 +43,15 @@ Browser-based barcode/QR scanning using device camera, barcode generation for st
 └──────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Barcode/QR scanner with camera preview, scan history list, visual item details card, add-to-voucher button
+
+
+## UI — Tally Mode
+Barcode entry field at cursor position, F9 to activate scanner, scanned item auto-fills stock item field, quantity prompt follows scan
+
+
 ## Implementation Steps
 1. Integrate barcode scanning library (html5-qrcode or quagga2)
 2. Build stock item ↔ barcode mapping management

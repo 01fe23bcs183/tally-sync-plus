@@ -21,6 +21,15 @@ Centralized notification center with categorized alerts, action items, and confi
 5. **Preferences**: Configure which notifications to receive
 6. **History**: View past notifications with search
 
+
+## UI — Easy Mode
+Bell icon with badge count, notification panel with categories (sync/compliance/stock), mark read/dismiss
+
+
+## UI — Tally Mode
+Alt+N to open notification list, numbered alerts, Enter to view detail, F5 to mark read, categorized by type
+
+
 ## Implementation Steps
 1. Create notification store and event system
 2. Build notification bell component with dropdown

@@ -21,6 +21,15 @@ Comprehensive sales analytics with product, customer, geography, and time-based 
 5. **Salesperson Performance**: Targets vs actuals per salesperson
 6. **Trend Detection**: Identify seasonal patterns and anomalies
 
+
+## UI — Easy Mode
+Interactive sales charts (bar/line/pie), product leaderboard, customer segment cards, trend analysis
+
+
+## UI — Tally Mode
+Sales register summary with grouping options (product/customer/month), F7 for period, F5 for details, columnar Tally format
+
+
 ## Implementation Steps
 1. Fetch sales vouchers from Tally with full detail
 2. Build aggregation engine (by product, customer, time, geography)

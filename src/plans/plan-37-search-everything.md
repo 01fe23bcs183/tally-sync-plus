@@ -45,6 +45,15 @@ Global search (Ctrl+K) that searches across all Tally data with instant results,
 └──────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Ctrl+K spotlight search with categorized results, recent searches, preview panel, filter chips
+
+
+## UI — Tally Mode
+Alt+F global search prompt, results list with type indicators (L=Ledger, V=Voucher, S=Stock), Enter to open, Esc to close
+
+
 ## Implementation Steps
 1. Build search index from all synced Tally data
 2. Implement fuzzy search with scoring (fuse.js)

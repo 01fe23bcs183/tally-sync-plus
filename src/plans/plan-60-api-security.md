@@ -20,6 +20,15 @@ Implement comprehensive API security: API key management, request signing (HMAC)
 5. **API Versioning**: Version headers, deprecation notices, migration guides
 6. **Abuse Detection**: Pattern detection, auto-block, alert admin
 
+
+## UI — Easy Mode
+API key management cards, rate limit gauges, security dashboard with charts
+
+
+## UI — Tally Mode
+API security managed via admin panel in Easy Mode — Tally Mode uses secure API automatically, no user-facing changes
+
+
 ## Implementation Steps
 1. Build API key generation and management system
 2. Implement HMAC request signing and verification

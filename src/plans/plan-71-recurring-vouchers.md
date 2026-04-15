@@ -20,6 +20,15 @@ Build a recurring voucher system where users define templates with schedules, an
 5. **Approval Workflow**: Optional approval before auto-creation
 6. **End Date/Count**: Set end date or max number of occurrences
 
+
+## UI — Easy Mode
+Recurring schedule cards, calendar view with upcoming entries, edit/skip/pause buttons
+
+
+## UI — Tally Mode
+Recurring voucher setup via F5, schedule list with dates, Alt+R for recurring register, F7 to skip occurrence
+
+
 ## Implementation Steps
 1. Build recurring template data model
 2. Create scheduler engine (cron-like for voucher creation)

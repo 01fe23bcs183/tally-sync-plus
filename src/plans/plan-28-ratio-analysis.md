@@ -20,6 +20,15 @@ Auto-computed financial ratios with trend charts, benchmarks, and plain-English 
 4. **Plain-English Insights**: "Your current ratio of 2.1 means you can cover short-term obligations"
 5. **Benchmark Comparison**: Compare against industry averages
 
+
+## UI — Easy Mode
+Gauge charts for each ratio, trend sparklines, traffic-light indicators (green/yellow/red), industry benchmark overlay
+
+
+## UI — Tally Mode
+Ratio analysis statement in Tally columnar format, F5 to calculate, period selection, Alt+P to print ratio report
+
+
 ## Implementation Steps
 1. Fetch Balance Sheet and P&L data from Tally
 2. Build ratio computation engine (20+ ratios)

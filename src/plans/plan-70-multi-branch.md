@@ -21,6 +21,15 @@ Build multi-branch accounting with unified data from all branch Tally instances,
 5. **Branch Hierarchy**: Group branches by region, zone, or custom hierarchy
 6. **Elimination Entries**: Auto-generate consolidation elimination entries
 
+
+## UI — Easy Mode
+Branch selector tabs, consolidated dashboard, inter-branch flow diagram, comparison charts
+
+
+## UI — Tally Mode
+Alt+F3 to switch branch, consolidated reports with branch columns, inter-branch voucher entry, F7 for branch comparison
+
+
 ## Implementation Steps
 1. Multi-branch data model with branch tagging
 2. Connect multiple Tally instances (via multi-instance agent, Plan 54)

@@ -20,6 +20,15 @@ Bi-directional Excel/Sheets sync with live data connection and formatted exports
 4. **Template Exports**: Pre-formatted Excel templates for specific reports
 5. **Scheduled Sync**: Auto-export reports to Sheets at set intervals
 
+
+## UI — Easy Mode
+Live connection panel with sync status, field mapping UI, export/import buttons with format preview
+
+
+## UI — Tally Mode
+Alt+X to export current view to Excel, F5 to import, mapping screen with Tab navigation, sync status in status bar
+
+
 ## Implementation Steps
 1. Build Excel export engine using SheetJS (with formatting)
 2. Create report-to-Excel template mapper

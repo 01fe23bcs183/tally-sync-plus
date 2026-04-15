@@ -51,6 +51,15 @@ AI-powered data entry that can extract data from invoice images (OCR), auto-sugg
 └─────────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Image drop zone with OCR preview, extracted fields with confidence scores, accept/edit/skip buttons
+
+
+## UI — Tally Mode
+Alt+I to activate AI input, paste/scan invoice image, extracted data fills voucher fields, Tab to confirm each field
+
+
 ## Implementation Steps
 1. Integrate OCR service (Google Vision API / Tesseract.js)
 2. Build invoice data extraction pipeline (regex + AI parsing)

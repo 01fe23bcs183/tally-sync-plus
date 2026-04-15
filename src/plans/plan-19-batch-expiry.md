@@ -38,6 +38,15 @@ Visual batch management with expiry alerts, automatic FIFO/FEFO enforcement, and
 └────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Color-coded expiry timeline (green=fresh, yellow=expiring, red=expired), batch selection cards, FIFO/FEFO visual indicators
+
+
+## UI — Tally Mode
+Batch-wise stock report in tabular format, F5 to select batch during voucher entry, FEFO order display, expiry alert list
+
+
 ## Implementation Steps
 1. Sync batch details from Tally stock items
 2. Build expiry dashboard with calendar view

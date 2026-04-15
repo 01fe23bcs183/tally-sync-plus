@@ -21,6 +21,15 @@ Implement encrypted backup system with geo-redundant storage, automated integrit
 5. **Automated Failover**: Auto-switch to secondary region on primary failure
 6. **Recovery Testing**: Monthly automated restore tests with reports
 
+
+## UI — Easy Mode
+Backup status dashboard, geo-redundancy map, recovery test results cards
+
+
+## UI — Tally Mode
+Backup managed via admin panel, Alt+B shows backup status, encrypted backups created automatically per schedule
+
+
 ## Implementation Steps
 1. Implement backup encryption pipeline
 2. Set up geo-redundant storage (AWS S3 cross-region, or equivalent)

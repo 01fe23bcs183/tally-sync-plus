@@ -21,6 +21,15 @@ Automate the entire balance confirmation workflow: generate letters from ledger 
 5. **Auto-Reconcile**: Compare confirmed amounts with book balance
 6. **Audit Report**: Generate CA-ready confirmation report
 
+
+## UI — Easy Mode
+Party list with confirmation status badges, bulk email button, response tracking dashboard
+
+
+## UI — Tally Mode
+Balance confirmation register, F5 to generate letters, F7 to send email, response status column, Alt+P to print letters
+
+
 ## Implementation Steps
 1. Build confirmation letter template with dynamic data
 2. Implement bulk email system with tracking

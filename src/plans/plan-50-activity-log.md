@@ -38,6 +38,15 @@ Comprehensive activity logging with user attribution, filtering, rollback, and e
 └──────────────────────────────────────────────┘
 ```
 
+
+## UI — Easy Mode
+Activity timeline feed, user avatar + action cards, filter sidebar, export button
+
+
+## UI — Tally Mode
+Activity register in Tally format, F5 for entry details, F7 to filter by user/date, Alt+P to print log, chronological list
+
+
 ## Implementation Steps
 1. Create activity log data model
 2. Implement logging hooks for all state-changing operations

@@ -21,6 +21,15 @@ Full offline capability using cached data, with sync queue for changes made offl
 5. **PWA Support**: Install as desktop/mobile app
 6. **Smart Sync**: Differential sync — only fetch changes since last sync
 
+
+## UI — Easy Mode
+Offline indicator banner, cached data badge, sync queue panel with pending count, auto-sync on reconnect
+
+
+## UI — Tally Mode
+Offline status in title bar, all keyboard operations work offline, sync queue counter, F5 to force sync when online
+
+
 ## Implementation Steps
 1. Set up IndexedDB storage for all data types
 2. Implement data caching on every sync

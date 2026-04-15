@@ -21,6 +21,15 @@ Build a drag-drop dashboard builder with a library of widgets. Users can create 
 6. **Shared Dashboards**: Admin can create and share dashboards with teams
 7. **Alert Widgets**: Overdue payments, low stock, compliance deadlines
 
+
+## UI — Easy Mode
+Drag-drop widget grid, widget library sidebar, resize handles, per-user save/load
+
+
+## UI — Tally Mode
+Dashboard managed via Easy Mode — Tally Mode uses classic menu-driven navigation instead of widget dashboard
+
+
 ## Implementation Steps
 1. Build dashboard grid system (react-grid-layout)
 2. Create widget component architecture (standardized data interface)
