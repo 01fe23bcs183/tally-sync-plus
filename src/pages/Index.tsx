@@ -26,9 +26,10 @@ import AuditTrailDashboard from '@/components/easy/AuditTrailDashboard';
 import BarcodeDashboard from '@/components/easy/BarcodeDashboard';
 import BatchExpiryDashboard from '@/components/easy/BatchExpiryDashboard';
 import MultiGodownDashboard from '@/components/easy/MultiGodownDashboard';
-import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList, ScanBarcode, FlaskConical, Warehouse } from 'lucide-react';
+import ManufacturingDashboard from '@/components/easy/ManufacturingDashboard';
+import { LayoutDashboard, BookOpen, FileText, Package, Settings, X, ArrowRightLeft, FolderTree, Wallet, Building2, Percent, Receipt, FileMinus, StickyNote, IndianRupee, GitCompare, FileCheck, Truck, Scissors, ShieldCheck, ClipboardList, ScanBarcode, FlaskConical, Warehouse, Factory } from 'lucide-react';
 
-type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'barcode' | 'batch' | 'godowns' | 'settings';
+type EasyTab = 'dashboard' | 'ledgers' | 'vouchers' | 'inventory' | 'currency' | 'costcenters' | 'budget' | 'reconciliation' | 'interest' | 'billwise' | 'notes' | 'memo' | 'gst' | 'gstrecon' | 'einvoice' | 'ewaybill' | 'tds' | 'tcs' | 'audit' | 'barcode' | 'batch' | 'godowns' | 'manufacturing' | 'settings';
 
 const Index = () => {
   const { mode } = useApp();
@@ -69,6 +70,7 @@ const Index = () => {
     { key: 'barcode', label: 'Barcode', icon: <ScanBarcode className="h-4 w-4" /> },
     { key: 'batch', label: 'Batch/Expiry', icon: <FlaskConical className="h-4 w-4" /> },
     { key: 'godowns', label: 'Godowns', icon: <Warehouse className="h-4 w-4" /> },
+    { key: 'manufacturing', label: 'Manufacturing', icon: <Factory className="h-4 w-4" /> },
   ];
 
   return (
@@ -125,6 +127,7 @@ const Index = () => {
             {activeTab === 'barcode' && <BarcodeDashboard />}
             {activeTab === 'batch' && <BatchExpiryDashboard />}
             {activeTab === 'godowns' && <MultiGodownDashboard />}
+            {activeTab === 'manufacturing' && <ManufacturingDashboard />}
           </>
         )}
       </div>
