@@ -1,84 +1,68 @@
 
 
-## 50 Feature Plans for Tally Integration App
+## Expand Plans: 50-80 (Connection Agent, Security, Platform Features)
 
-Create 50 detailed plan documents in `src/plans/` (as markdown files), each covering a specific feature area, improvement, or pain-point solution for Tally users. These are reference/documentation files, not code — they guide future development.
+### Overview
+Add 30 new plan files (plan-51 through plan-80) covering three themes the user requested, and update the master index.
 
-### Organization
+### Plan 50 stays as-is (Activity Log). New plans start at 51.
 
-Files will be named `plan-01-*.md` through `plan-50-*.md`, grouped thematically:
+---
 
-**Accounting & Data Entry (01-10)**
-1. Smart Voucher Entry — auto-suggest ledgers, remember patterns, duplicate detection
-2. Bulk Voucher Import — CSV/Excel upload with mapping and validation
-3. Multi-Currency Support — forex rates, gain/loss auto-calculation
-4. Cost Center Management — allocation UI, cost center reports
-5. Budget Management — create budgets, track vs actuals, alerts
-6. Bank Reconciliation — statement upload, auto-match, reconcile UI
-7. Interest Calculation — auto-compute interest on outstanding balances
-8. Bill-wise Details — track bills, adjust payments, aging reports
-9. Debit/Credit Note Workflow — linked to original invoice, auto-adjustment
-10. Memorandum Vouchers — non-accounting entries, conversion to regular
+### Connection & Sync Agent (51-55)
+A local desktop agent/service that runs persistently on the user's PC, bridges Tally to our cloud server.
 
-**GST & Compliance (11-17)**
-11. GST Return Filing — GSTR-1, GSTR-3B auto-generation from vouchers
-12. GST Reconciliation — match purchase register with GSTR-2A/2B
-13. E-Invoice Generation — IRN generation, QR code, auto-upload to portal
-14. E-Way Bill — auto-generate from invoice, bulk generation
-15. TDS Management — auto-deduct TDS, generate Form 26Q, challans
-16. TCS Compliance — auto-apply TCS rules, reporting
-17. Audit Trail & Compliance — immutable log, Companies Act 2013 compliance
+| # | Title | Focus |
+|---|-------|-------|
+| 51 | **Tally Sync Agent (Desktop Service)** | Electron/Node tray app that runs in background, connects to Tally XML API locally, pushes data to cloud server via WebSocket/REST. Auto-start on boot, system tray icon, connection status. |
+| 52 | **Agent Auto-Update & Health Monitor** | Agent self-updates, health checks (is Tally running? is network up?), auto-reconnect, heartbeat pings, crash recovery, logs. |
+| 53 | **Real-Time Data Streaming** | Agent watches Tally for changes (polling/diff), streams new vouchers/ledgers/stock changes to server in real-time instead of manual sync. Event-driven architecture. |
+| 54 | **Multi-Instance Agent Manager** | Support multiple Tally instances on same PC or LAN. Agent discovers Tally instances, manages connections to each, routes data per company. |
+| 55 | **Agent Configuration & Remote Control** | Web dashboard to configure agent remotely — set sync intervals, select companies, view agent status, restart agent, view logs. Push config changes from cloud to agent. |
 
-**Inventory & Supply Chain (18-25)**
-18. Barcode/QR Scanning — scan items for voucher entry, stock takes
-19. Batch & Expiry Tracking — FIFO/FEFO, expiry alerts, batch-wise reports
-20. Multi-Godown Management — transfer notes, godown-wise stock, reorder levels
-21. Manufacturing/BOM — bill of materials, production entries, wastage tracking
-22. Purchase Order Management — create PO, track fulfillment, convert to invoice
-23. Sales Order Pipeline — order to invoice workflow, partial delivery
-24. Stock Aging Analysis — slow-moving items, dead stock identification
-25. Reorder Alerts — minimum stock levels, auto-generate PO suggestions
+### Security (56-65)
 
-**Reporting & Analytics (26-33)**
-26. Custom Report Builder — drag-drop fields, save templates, schedule reports
-27. Cash Flow Forecasting — AI-based prediction from historical data
-28. Ratio Analysis Dashboard — liquidity, profitability, efficiency ratios
-29. Comparative Statements — multi-period/multi-company comparisons
-30. Outstanding Management — receivables/payables aging, follow-up reminders
-31. Sales Analytics — top products, customer segments, trends
-32. Expense Analytics — category breakdown, anomaly detection, budgets
-33. Fund Flow Statement — sources and uses of funds, period comparison
+| # | Title | Focus |
+|---|-------|-------|
+| 56 | **End-to-End Data Encryption** | Encrypt all data in transit (TLS) and at rest. Encryption keys per company. Zero-knowledge option where server cannot read financial data. |
+| 57 | **Two-Factor Authentication (2FA)** | TOTP (Google Authenticator), SMS OTP, email verification. Mandatory 2FA for admin actions. Recovery codes. |
+| 58 | **Session Management & Device Trust** | Active session tracking, force logout, trusted devices, session timeout policies, IP-based restrictions, concurrent session limits. |
+| 59 | **Data Access Audit Trail** | Log every data access (not just changes) — who viewed which report, exported what data. GDPR-style access logs. Tamper-proof logging. |
+| 60 | **API Security & Rate Limiting** | API key management for agent-to-server communication. Rate limiting, request signing, IP whitelisting, API versioning, abuse detection. |
+| 61 | **Sensitive Data Masking** | Mask financial amounts, party names, bank details based on user role. Configurable masking rules. Unmask with authorization. |
+| 62 | **Compliance & Data Residency** | Data stored in specific regions (India for GST compliance). Data retention policies, right to deletion, export all data, compliance certifications. |
+| 63 | **Vulnerability Scanning & Penetration Testing** | Automated security scans, dependency vulnerability checks, CSP headers, XSS/CSRF protection, SQL injection prevention. Security scorecard. |
+| 64 | **Backup Encryption & Disaster Recovery** | Encrypted backups, geo-redundant storage, disaster recovery plan, RTO/RPO targets, automated failover, backup integrity verification. |
+| 65 | **Security Incident Response** | Breach detection, auto-lockdown on suspicious activity, incident notification system, forensic logging, security alert dashboard. |
 
-**UX & Productivity (34-41)**
-34. Keyboard Shortcut Customization — remap shortcuts, profiles, cheat sheet
-35. Dark Mode & Themes — full theme system, Tally classic theme option
-36. Multi-Window Support — open reports/vouchers in separate panels
-37. Search Everything — global search across ledgers, vouchers, stock, reports
-38. Favorites & Quick Access — pin frequent ledgers/reports/vouchers
-39. Undo/Redo System — multi-level undo for voucher edits
-40. Auto-Save & Draft — save incomplete vouchers, resume later
-41. Notification Center — sync errors, compliance deadlines, stock alerts
+### Platform Features & Tally Pain-Point Solutions (66-80)
 
-**Integration & Sync (42-47)**
-42. WhatsApp/SMS Invoice Sharing — send invoices directly to parties
-43. Payment Gateway Integration — collect payments via UPI/cards from invoices
-44. Excel/Google Sheets Sync — export/import data, live connection
-45. Multi-Company Consolidation — consolidated reports across companies
-46. Offline Mode — work without Tally running, sync when reconnected
-47. Conflict Resolution UI — side-by-side diff when Tally data conflicts
+| # | Title | Focus |
+|---|-------|-------|
+| 66 | **Smart Data Entry with AI** | AI auto-fills voucher fields from invoice images (OCR), learns from past entries, suggests narrations, auto-categorize expenses. |
+| 67 | **Invoice PDF Generation & Templates** | Generate professional invoices from voucher data. Custom templates (GST invoice, proforma, delivery challan). Logo, terms, digital signature. |
+| 68 | **Party Ledger Confirmation (Balance Confirmation)** | Auto-generate balance confirmation letters, email to parties, track responses, reconcile confirmations. Solves year-end audit pain. |
+| 69 | **Cheque Management & PDC Tracking** | Post-dated cheque register, maturity alerts, cheque printing, bounce tracking, bank-wise cheque summary. Huge Tally pain point. |
+| 70 | **Multi-Branch Accounting** | Branch-wise books, inter-branch transactions, consolidated branch reports, branch comparison. Solves multi-location business pain. |
+| 71 | **Recurring Voucher Automation** | Set up recurring entries (rent, salary, EMI). Auto-create vouchers on schedule. Skip/modify individual occurrences. Calendar view. |
+| 72 | **Cash & Bank Book with Reconciliation** | Visual cash book, bank book with running balance. Drag-drop bank statement matching. Auto-suggest matches. Reconciliation report. |
+| 73 | **Payroll Integration** | Employee master, salary structure, attendance, payslip generation, PF/ESI calculation, Form 16. Push salary vouchers to Tally. |
+| 74 | **Customer/Vendor Portal** | Self-service portal for parties to view their ledger, download invoices, make payments, raise disputes. Reduces calls/emails. |
+| 75 | **Document Attachment & Storage** | Attach bills, receipts, contracts to vouchers/ledgers. Cloud storage, search by document, mandatory attachment rules for audit. |
+| 76 | **Mobile App (PWA)** | Full mobile experience — view reports, approve vouchers, quick data entry, photo-to-voucher, push notifications for alerts. |
+| 77 | **Dashboard Customization & Widgets** | Drag-drop dashboard builder. KPI widgets, charts, alerts, shortcuts. Per-user dashboards. Real-time data refresh. |
+| 78 | **Data Import from Other Software** | Import from Busy, Marg, QuickBooks, Zoho Books. Field mapping, validation, trial import, rollback. Migration wizard. |
+| 79 | **Automated Report Scheduling & Email** | Schedule any report (daily P&L, weekly outstanding, monthly BS). Auto-generate and email PDF/Excel to stakeholders. |
+| 80 | **AI-Powered Anomaly Detection** | Flag unusual transactions (duplicate amounts, odd timing, missing GST, round-figure cash entries). Fraud detection dashboard. Configurable rules + ML. |
 
-**Security & Admin (48-50)**
-48. User Roles & Access Control — restrict features/data per user
-49. Data Backup & Restore — scheduled backups, one-click restore
-50. Activity Log & Audit — who changed what, when, with rollback option
-
-### Technical Details
-
-- Each file follows a consistent template: Problem Statement, Current Pain Point, Proposed Solution, UI Mockup (ASCII), Data Requirements, Tally XML APIs Needed, Implementation Steps, Priority Level
-- Files are pure markdown documentation for planning reference
-- An `index.md` in the plans folder links to all 50 with status tracking
+---
 
 ### Deliverables
-- `src/plans/index.md` — master index with all 50 plans
-- `src/plans/plan-01-smart-voucher-entry.md` through `src/plans/plan-50-activity-log-audit.md` — 50 detailed plan files
+- 30 new markdown files: `src/plans/plan-51-*.md` through `src/plans/plan-80-*.md`
+- Each file follows the existing template: Problem Statement, Current Pain Points, Proposed Solution, Key Features, UI Mockup (ASCII), Implementation Steps, Priority Level, Estimated Effort
+- Updated `src/plans/index.md` with 4 new sections added to the master table
+
+### Technical Notes
+- Plans 51-55 describe a **desktop agent** (Electron or Node.js system tray app) that acts as a bridge between Tally on the user's PC and the cloud platform. This is separate from the web app itself.
+- All plans are documentation/reference files only — no code changes to the running app.
 
