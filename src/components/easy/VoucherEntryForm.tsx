@@ -19,7 +19,7 @@ import {
 import LedgerAutocomplete from './LedgerAutocomplete';
 import {
   detectDuplicates, suggestLedgerPairs, suggestNarrations, validateVoucher,
-  getTemplates, saveTemplate, deleteTemplate, DuplicateMatch, ValidationError,
+  getTemplates, saveTemplate, deleteTemplate,
   VoucherTemplate
 } from '@/services/voucherPatternService';
 import { VoucherType, VoucherEntry } from '@/types/tally';
